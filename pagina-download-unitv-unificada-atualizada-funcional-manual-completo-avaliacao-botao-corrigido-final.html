@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Página Oficial de Download UniTV</title>
+<div class="mb-6 border-b border-gray-200 pb-6">
+</div>
+<script src="https://cdn.tailwindcss.com">
+function toggleSobre() {
+  const content = document.getElementById('sobre-content');
+  const button = document.getElementById('toggle-sobre-btn');
+  if (!content || !button) return;
+
+  content.classList.toggle('hidden');
+  const willShow = !content.classList.contains('hidden');
+
+  button.setAttribute('aria-expanded', String(willShow));
+  content.setAttribute('aria-hidden', String(!willShow));
+
+  const textSpan = button.querySelector('.btn-text');
+  const iconSpan = button.querySelector('.btn-icon');
+  if (textSpan) textSpan.textContent = willShow ? 'Esconder informações' : 'Sobre o UniTV';
+  if (willShow) content.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+
+function toggleSobre() {
+  const content = document.getElementById('sobre-content');
+  const button = document.getElementById('toggle-sobre-btn');
+  if (!content || !button) return;
+
+  content.classList.toggle('hidden');
+  const willShow = !content.classList.contains('hidden');
+
+  button.setAttribute('aria-expanded', String(willShow));
+  content.setAttribute('aria-hidden', String(!willShow));
+
+  const textSpan = button.querySelector('.btn-text');
+  const iconSpan = button.querySelector('.btn-icon');
+  if (textSpan) textSpan.textContent = willShow ? 'Esconder informações' : 'Sobre o UniTV';
+  if (willShow) content.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+
+function toggleAvaliacao() {
+  const content = document.getElementById('avaliacao-content');
+  const button = document.getElementById('toggle-avaliacao-btn');
+  if (!content || !button) return;
+
+  content.classList.toggle('hidden');
+  const willShow = !content.classList.contains('hidden');
+
+  button.setAttribute('aria-expanded', String(willShow));
+  content.setAttribute('aria-hidden', String(!willShow));
+
+  const textSpan = button.querySelector('.btn-text');
+  if (textSpan) textSpan.textContent = willShow ? 'Esconder informações' : 'Como funciona a avaliação';
+
+  if (willShow) content.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+function toggleAvaliacao() {
+  const content = document.getElementById('avaliacao-content');
+  const button = document.getElementById('toggle-avaliacao-btn');
+  if (!content || !button) return;
+
+  content.classList.toggle('hidden');
+  const willShow = !content.classList.contains('hidden');
+
+  button.setAttribute('aria-expanded', String(willShow));
+  content.setAttribute('aria-hidden', String(!willShow));
+
+  const textSpan = button.querySelector('.btn-text');
+  if (textSpan) textSpan.textContent = willShow ? 'Esconder informações' : 'Como funciona a avaliação grátis do UniTV';
+
+  if (willShow) content.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+function toggleAvaliacao() {
+  const content = document.getElementById('avaliacao-content');
+  const button = document.getElementById('toggle-avaliacao-btn');
+  if (!content || !button) return;
+
+  content.classList.toggle('hidden');
+  const willShow = !content.classList.contains('hidden');
+
+  button.setAttribute('aria-expanded', String(willShow));
+  content.setAttribute('aria-hidden', String(!willShow));
+
+  const textSpan = button.querySelector('.btn-text');
+  if (textSpan) textSpan.textContent = willShow ? 'Esconder informações' : 'Como funciona a avaliação grátis do UniTV';
+
+  if (willShow) content.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+</script>
+<style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    .modern-bg {
+      background: linear-gradient(135deg, #eef2ff 0%, #f7f9fc 100%);
+    }
+    .btn-primary {
+      background-color: #0056b3;
+      box-shadow: 0 10px 20px -5px rgba(0, 86, 179, 0.4);
+      transition: all 0.3s ease;
+    }
+    .btn-primary:hover {
+      background-color: #004494;
+      transform: translateY(-3px);
+      box-shadow: 0 15px 30px -8px rgba(0, 86, 179, 0.5);
+    }
+    .btn-primary:active {
+      transform: translateY(0);
+    }
+    .btn-secondary {
+      border: 2px solid #0056b3;
+      color: #0056b3;
+      background-color: white;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+    .btn-secondary:hover {
+      background-color: #e6f0ff;
+      transform: translateY(-2px);
+    }
+    .btn-whatsapp {
+      box-shadow: 0 4px 6px -1px rgba(34, 197, 94, 0.3),
+                  0 2px 4px -2px rgba(34, 197, 94, 0.3);
+      transition: all 0.3s ease;
+    }
+    .btn-whatsapp:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 8px 15px -4px rgba(34, 197, 94, 0.5);
+    }
+    #manual-content {
+      opacity: 1;
+      transition: opacity 0.3s ease;
+    }
+    #manual-content.hidden {
+      opacity: 0;
+      display: none;
+    }
+    .modal-open { overflow: hidden; }
+    .modal-backdrop { backdrop-filter: blur(2px); }
+    .modal-panel { max-height: 90vh; }
+  </style>
+</head>
+<body class="modern-bg min-h-screen flex items-center justify-center p-4 flex-col">
+<main aria-label="Conteúdo principal da página" class="w-full max-w-3xl bg-white rounded-3xl shadow-2xl p-6 sm:p-8 text-center border border-gray-100" id="main-content" role="main">
+<header>
+<div class="mx-auto mb-6 rounded-full border-4 border-blue-200 shadow-lg p-1 w-24 h-24 overflow-hidden bg-white flex items-center justify-center">
+<svg aria-labelledby="logoTitle logoDesc" class="w-full h-full object-cover" height="96" role="img" viewbox="0 0 200 200" width="96" xmlns="http://www.w3.org/2000/svg">
+<title id="logoTitle">Logotipo UniTV</title>
+<desc id="logoDesc">Marca UniTV com fundo gradiente azul e detalhes brancos</desc>
+<defs>
+<lineargradient id="g1" x1="0%" x2="100%" y1="0%" y2="100%">
+<stop offset="0%" stop-color="#0056b3"></stop>
+<stop offset="100%" stop-color="#00a3ff"></stop>
+</lineargradient>
+</defs>
+<rect fill="url(#g1)" height="100%" rx="36" ry="36" width="100%"></rect>
+<g fill="#fff" transform="translate(40,44) scale(0.8)">
+<path d="M20 10h60v12H20zM20 30h60v12H20zM20 50h60v12H20z" opacity="0.95"></path>
+<circle cx="110" cy="30" opacity="0.95" r="18"></circle>
+</g>
+</svg>
+</div>
+<h1 class="text-3xl font-extrabold text-gray-800 mb-2">Baixar UniTV Oficial</h1>
+<p class="text-gray-500 mb-8">Selecione o seu dispositivo e comece a diversão em alta definição.</p>
+</header>
+<section aria-labelledby="banner-title">
+<div class="mb-6">
+<div class="mb-6"><button aria-controls="sobre-content" aria-expanded="false" aria-label="Mostrar ou esconder informações sobre o UniTV" class="btn-secondary inline-flex items-center justify-center w-full px-6 py-3 text-base font-semibold rounded-xl shadow-md" id="toggle-sobre-btn" onclick="toggleSobre()">
+<span aria-hidden="true" class="btn-icon mr-2">
+<svg class="h-5 w-5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M13 16h-1v-4h-1m1-4h.01M12 20h.01M12 4h.01" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</span>
+<span class="btn-text">Sobre o UniTV</span>
+</button><div aria-hidden="true" aria-labelledby="toggle-sobre-btn" class="hidden text-left pb-6 mb-6 border-b border-gray-300" id="sobre-content" role="region">
+<p class="text-sm text-gray-700 leading-relaxed">
+  O UniTV pertence ao grupo HTV, uma empresa chinesa que atende em diversos países do mundo, dona também do Tele Latino que é vendido em países latinos e espanhóis, A-TV vendido nos Estados Unidos, YouCine e vários outros aplicativos no mercado.
+</p>
+<p class="text-sm text-gray-700 leading-relaxed mt-2">
+  O UniTV por ser de uma empresa gigante tem hoje o melhor custo benefício do mercado entregando boa qualidade e estabilidade aliado a um aplicativo completo com um excelente preço.
+</p>
+<p class="text-sm text-gray-700 leading-relaxed mt-2">
+  Outro ponto forte do UniTV são seus conteúdos ondemand, por se tratar de uma empresa antiga no mercado possui um dos maiores catálogos de filmes e séries.
+</p>
+<p class="text-sm text-gray-700 leading-relaxed mt-2">
+  Além disso ressaltamos que ele possui tudo em um único aplicativo, ou seja os canais ao vivo e os conteúdos ondemand no mesmo aplicativo, sem necessidade de instalar vários aplicativos no aparelho.
+</p>
+</div></div><a aria-label="UniTV Web chegou - abrir uvweboficial.com" class="w-full inline-flex items-center justify-center px-4 py-3 rounded-2xl bg-gradient-to-r from-purple-600 to-pink-500 text-white font-extrabold shadow-lg hover:opacity-95 focus:outline-none focus:ring-2 focus:ring-purple-300" href="https://www.uvweboficial.com" rel="noopener noreferrer" role="link" target="_blank">
+<span aria-hidden="true" class="mr-3 text-xl">🎉</span>
+<span id="banner-title">UniTV Web chegou! — Assista direto no navegador</span>
+</a>
+</div>
+</section>
+<section aria-labelledby="manual-title">
+<section aria-labelledby="download-title" class="mb-8"><h2 class="text-2xl font-bold text-gray-800 mb-4 text-center" id="download-title">Links de Download</h2><a aria-label="Baixar para Android" class="block w-full mb-4 px-6 py-3 rounded-xl bg-blue-600 text-white font-semibold text-center shadow hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-300" href="http://zipa.la/unibox" rel="noopener noreferrer" role="link" target="_blank"><span aria-hidden="true" class="mr-2">📱</span><span>Baixar para Android</span></a><a aria-label="Baixar para TV Box" class="block w-full mb-4 px-6 py-3 rounded-xl bg-blue-600 text-white font-semibold text-center shadow hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-300" href="http://zipa.la/unibox" rel="noopener noreferrer" role="link" target="_blank"><span aria-hidden="true" class="mr-2">📺</span><span>Baixar para TV Box</span></a><a aria-label="Baixar para Fire TV" class="block w-full mb-4 px-6 py-3 rounded-xl bg-blue-600 text-white font-semibold text-center shadow hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-300" href="http://zipa.la/unibox" rel="noopener noreferrer" role="link" target="_blank"><span aria-hidden="true" class="mr-2">🔥</span><span>Baixar para Fire TV</span></a></section><div class="mb-6 border-b border-gray-200 pb-6">
+<button aria-controls="manual-content" aria-expanded="false" aria-label="Mostrar ou esconder o manual de instalação e uso" class="btn-secondary inline-flex items-center justify-center w-full px-6 py-3 text-base font-semibold rounded-xl shadow-md" id="toggle-manual-btn" onclick="toggleManual()">
+<span aria-hidden="true" class="btn-icon mr-2">
+<svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 19.5V15a2.5 2.5 0 0 1 5 0v4.5"></path>
+<path d="M19 19.5V15a2.5 2.5 0 0 0-5 0v4.5"></path>
+<rect height="6" rx="1" width="14" x="5" y="4"></rect>
+</svg>
+</span>
+<span class="btn-text">Ver Manual de Instalação e Uso</span>
+</button>
+<p class="text-sm text-gray-500 mt-2">Instruções rápidas, dicas e solução de problemas.</p>
+</div>
+<div aria-hidden="true" aria-labelledby="manual-title" class="hidden text-left pb-6 mb-6 border-b border-gray-300" id="manual-content" role="region">
+<h2 class="text-xl font-bold text-gray-800 mb-4 text-center pb-2">Guia Completo de Instalação e Uso</h2>
+<div class="mb-4 p-4 bg-blue-50 rounded-lg shadow-inner border border-blue-200">
+<h3 class="font-bold text-blue-800 mb-2">1. Instalação do Aplicativo</h3>
+<ul class="list-disc ml-5 text-sm text-gray-700 space-y-1">
+<li>Escolha o link de download compatível com seu dispositivo.</li>
+<li>Após o download, abra o arquivo APK e permita a instalação de fontes desconhecidas.</li>
+<li>Conclua a instalação e abra o aplicativo UniTV.</li>
+</ul>
+</div>
+<div class="mb-4 p-4 bg-green-50 rounded-lg shadow-inner border border-green-200">
+<h3 class="font-bold text-green-800 mb-2">2. Ativação e Login</h3>
+<ul class="list-disc ml-5 text-sm text-gray-700 space-y-1">
+<li>Insira o código de ativação fornecido pela Capini Serviços.</li>
+<li>Verifique se está conectado à internet para validar o acesso.</li>
+<li>Após o login, o conteúdo será liberado automaticamente.</li>
+</ul>
+</div>
+<div class="mb-4 p-4 bg-yellow-50 rounded-lg shadow-inner border border-yellow-200">
+<h3 class="font-bold text-yellow-800 mb-2">3. Funcionalidades Principais</h3>
+<ul class="list-disc ml-5 text-sm text-gray-700 space-y-1">
+<li>Mais de 65 canais em qualidade 4K (UHD).</li>
+<li>Playback disponível por até 7 dias.</li>
+<li>Suporte a até 2 dispositivos simultâneos.</li>
+<li>Catálogo ondemand com filmes e séries atualizados.</li>
+<li>Interface intuitiva com busca por nome, gênero e idioma.</li>
+</ul>
+</div>
+<div class="mb-4 p-4 bg-red-50 rounded-lg shadow-inner border border-red-200">
+<h3 class="font-bold text-red-800 mb-2">4. Dicas e Solução de Problemas</h3>
+<ul class="list-disc ml-5 text-sm text-gray-700 space-y-1">
+<li>Em caso de travamentos, verifique sua conexão de internet.</li>
+<li>Limpe o cache do aplicativo nas configurações do dispositivo.</li>
+<li>Para suporte técnico, utilize o botão de WhatsApp disponível na página.</li>
+<li>Atualizações são feitas automaticamente ao abrir o aplicativo.</li>
+</ul>
+</div>
+</div>
+</section>
+</main>
+<script>
+    function toggleManual() {
+      const content = document.getElementById('manual-content');
+      const button = document.getElementById('toggle-manual-btn');
+      if (!content || !button) return;
+
+      content.classList.toggle('hidden');
+      const willShow = !content.classList.contains('hidden');
+
+      button.setAttribute('aria-expanded', String(willShow));
+      content.setAttribute('aria-hidden', String(!willShow));
+
+      const textSpan = button.querySelector('.btn-text');
+      const iconSpan = button.querySelector('.btn-icon');
+      if (textSpan) textSpan.textContent = willShow ? 'Esconder Manual' : 'Ver Manual de Instalação e Uso';
+      if (iconSpan) {
+        iconSpan.innerHTML = willShow
+          ? `<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>`
+          : `<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5V15a2.5 2.5 0 0 1 5 0v4.5"/><path d="M19 19.5V15a2.5 2.5 0 0 0-5 0v4.5"/><rect x="5" y="4" width="14" height="6" rx="1"/></svg>`;
+      }
+
+      if (willShow) content.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  </script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const ua = navigator.userAgent.toLowerCase();
+  const androidBtn = document.getElementById("btn-android");
+  const firetvBtn = document.getElementById("btn-firetv");
+  const tvboxBtn = document.getElementById("btn-tvbox");
+
+  if (ua.includes("android")) {
+    if (androidBtn) androidBtn.style.display = "inline-flex";
+    if (firetvBtn) firetvBtn.style.display = "none";
+    if (tvboxBtn) tvboxBtn.style.display = "none";
+  } else if (ua.includes("firefox") || ua.includes("silk") || ua.includes("aft")) {
+    if (androidBtn) androidBtn.style.display = "none";
+    if (firetvBtn) firetvBtn.style.display = "inline-flex";
+    if (tvboxBtn) tvboxBtn.style.display = "none";
+  } else {
+    if (androidBtn) androidBtn.style.display = "none";
+    if (firetvBtn) firetvBtn.style.display = "none";
+    if (tvboxBtn) tvboxBtn.style.display = "inline-flex";
+  }
+});
+</script>
+<!-- Modal de Aceite de Termos -->
+<div class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50" id="termos-modal">
+<div aria-labelledby="termos-title" aria-modal="true" class="bg-white rounded-xl shadow-xl max-w-2xl w-full p-6 overflow-y-auto max-h-[90vh]" role="dialog">
+<h2 class="text-xl font-bold text-gray-800 mb-4" id="termos-title">Termos de Uso - Capini Serviços</h2>
+<div class="text-sm text-gray-700 whitespace-pre-wrap mb-6" id="termos-content">
+      Termos de Uso ? Capini Serviços
+1. Aceitação dos Termos
+Ao acessar ou utilizar os serviços online da Capini Serviços, o usuário declara que leu, compreendeu e concorda
+com os presentes Termos de Uso e com a Política de Privacidade, comprometendo-se a utilizá-los de forma ética,
+responsável e em conformidade com a legislação vigente.
+2. Objeto
+Estes Termos regulam o acesso e uso dos serviços digitais oferecidos pela Capini Serviços, incluindo conteúdos,
+funcionalidades e suporte técnico disponibilizados por meio de sua plataforma.
+3. Propriedade Intelectual
+Todo o conteúdo disponibilizado, incluindo textos, imagens, logotipos, marcas, funcionalidades e software, é de
+propriedade exclusiva da Capini Serviços ou de seus licenciadores, sendo protegido pela legislação de direitos
+autorais e propriedade intelectual. É vedada qualquer reprodução, distribuição ou modificação sem autorização
+expressa.
+4. Privacidade e Proteção de Dados Pessoais
+A Capini Serviços compromete-se com a proteção dos dados pessoais dos usuários, conforme previsto na Lei nº
+13.709/2018 (LGPD). Os dados coletados serão utilizados exclusivamente para finalidades legítimas, como
+prestação de serviços, comunicação com o usuário e melhoria da experiência na plataforma.
+- Dados coletados: nome, e-mail, telefone, dados de navegação, entre outros necessários.
+- Finalidade: prestação de serviços, suporte, marketing (com consentimento), segurança.
+- Compartilhamento: apenas com parceiros contratualmente obrigados à confidencialidade e segurança.
+- Direitos do titular: acesso, correção, exclusão, portabilidade, revogação de consentimento.
+- Contato do encarregado (DPO): [inserir e-mail ou canal de atendimento].
+5. Responsabilidades
+O usuário é responsável por:
+- Utilizar os serviços de forma lícita e segura.
+- Não praticar atos que comprometam a integridade da plataforma ou de outros usuários.
+- Manter a confidencialidade de suas credenciais de acesso.
+A Capini Serviços não se responsabiliza por:
+- Danos decorrentes de uso indevido da plataforma.
+- Interrupções temporárias por manutenção ou falhas técnicas.
+- Conteúdos de terceiros eventualmente acessados por meio da plataforma.
+6. Modificações dos Termos
+A Capini Serviços poderá alterar estes Termos de Uso a qualquer momento, visando adequações legais ou
+melhorias nos serviços. O uso contínuo da plataforma após alterações implica aceitação tácita dos novos termos.
+7. Foro
+Fica eleito o foro da comarca do Rio de Janeiro/RJ para dirimir quaisquer controvérsias oriundas destes Termos,
+com renúncia a qualquer outro, por mais privilegiado que seja.
+
+    </div>
+<button class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400" id="aceitar-termos-btn">
+      Aceito os Termos de Uso
+    </button>
+</div>
+</div>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const modal = document.getElementById("termos-modal");
+  const aceitarBtn = document.getElementById("aceitar-termos-btn");
+
+  if (!localStorage.getItem("termosCapiniAceitos")) {
+    document.body.classList.add("modal-open");
+    modal.style.display = "flex";
+  } else {
+    modal.remove();
+  }
+
+  aceitarBtn.addEventListener("click", function() {
+    localStorage.setItem("termosCapiniAceitos", "true");
+    modal.remove();
+    document.body.classList.remove("modal-open");
+  });
+});
+</script>
+<footer class="text-center text-sm text-gray-500 py-4 mt-8 mt-auto">© 2025 Capini Serviços. Todos os direitos reservados.<p class="text-xs text-gray-400 mt-1">Versão v1.0.0</p></footer>
+<a aria-label="Suporte via WhatsApp" class="fixed bottom-6 right-6 bg-green-500 text-white px-4 py-3 rounded-full shadow-lg flex items-center gap-2 animate-bounce z-50" href="https://wa.me/5521979823313?text=Ol%C3%A1%2C+preciso+de+ajuda+com+o+UniTV." rel="noopener" target="_blank">
+<svg class="h-5 w-5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M3 3h18v18H3V3z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+<path d="M8 12h.01M12 12h.01M16 12h.01" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+Suporte</a><script>
+function toggleSobre() {
+  const content = document.getElementById('sobre-content');
+  const button = document.getElementById('toggle-sobre-btn');
+  if (!content || !button) return;
+
+  content.classList.toggle('hidden');
+  const willShow = !content.classList.contains('hidden');
+
+  button.setAttribute('aria-expanded', String(willShow));
+  content.setAttribute('aria-hidden', String(!willShow));
+
+  const textSpan = button.querySelector('.btn-text');
+  if (textSpan) textSpan.textContent = willShow ? 'Esconder informações' : 'Sobre o UniTV';
+
+  if (willShow) content.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+</script>
+<script>
+function toggleAvaliacao() {
+  const content = document.getElementById('avaliacao-content');
+  const button = document.getElementById('toggle-avaliacao-btn');
+  if (!content || !button) return;
+
+  content.classList.toggle('hidden');
+  const willShow = !content.classList.contains('hidden');
+
+  button.setAttribute('aria-expanded', String(willShow));
+  content.setAttribute('aria-hidden', String(!willShow));
+
+  const textSpan = button.querySelector('.btn-text');
+  if (textSpan) textSpan.textContent = willShow ? 'Esconder informações' : 'Como funciona a avaliação grátis do UniTV';
+
+  if (willShow) content.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+</script>
+</body>
+</html>
