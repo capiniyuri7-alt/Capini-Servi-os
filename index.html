@@ -5,40 +5,43 @@
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Página Oficial de Download UniTV</title>
 
-<!-- Carregamento do Tailwind CSS -->
+<!-- Carregamento do Tailwind CSS para a estilização -->
 <script src="https://cdn.tailwindcss.com"></script>
 
-<!-- Definição de estilos e classes personalizadas -->
+<!-- Definição de estilos e classes personalizadas (Dark Mode) -->
 <style>
   /* Define a fonte Inter para o corpo do texto */
   body {
     font-family: 'Inter', sans-serif;
   }
-  /* Estilo de fundo moderno com gradiente suave */
+  /* Estilo de fundo moderno com gradiente escuro */
   .modern-bg {
-    background: linear-gradient(135deg, #eef2ff 0%, #f7f9fc 100%);
+    background: linear-gradient(135deg, #1f2937 0%, #111827 100%); /* Fundo Escuro */
   }
-  /* Estilos para os Cards de Download (Novidade para Intuitividade) */
+  /* Estilos para os Cards de Download */
   .download-card {
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    background-color: #ffffff;
-    border: 1px solid #e5e7eb;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    background-color: #1f2937; /* Fundo do Card Escuro */
+    border: 1px solid #374151; /* Borda Escura */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
   }
   .download-card:hover {
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15), 0 0 0 3px #bfdbfe; /* Anel azul claro */
+    /* Efeito de hover: Sombra mais proeminente e anel azul para Dark Mode */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5), 0 0 0 3px #1e40af; 
     transform: translateY(-4px);
   }
+  /* Botões Secundários (Manual e Sobre) - Estilo Dark Mode */
   .btn-secondary {
-    border: 2px solid #0056b3;
-    color: #0056b3;
-    background-color: white;
+    border: 2px solid #3b82f6; /* Azul primário */
+    color: #3b82f6; /* Cor do texto Azul */
+    background-color: #1f2937; /* Fundo do Botão Escuro */
     transition: background-color 0.3s ease, transform 0.2s ease;
   }
   .btn-secondary:hover {
-    background-color: #e6f0ff;
+    background-color: #374151; /* Fundo hover mais escuro */
     transform: translateY(-2px);
   }
+  /* Estilo para o botão flutuante do WhatsApp */
   .btn-whatsapp-float {
     transition: transform 0.3s ease;
   }
@@ -49,80 +52,73 @@
 </head>
 <body class="modern-bg min-h-screen flex items-center justify-center p-4 flex-col">
 
-<main aria-label="Conteúdo principal da página" class="w-full max-w-4xl bg-white rounded-3xl shadow-2xl p-6 sm:p-10 text-center border border-gray-100" id="main-content" role="main">
+<!-- Container Principal (Centralizado e com tema escuro) -->
+<main aria-label="Conteúdo principal da página" class="w-full max-w-4xl bg-gray-900 rounded-3xl shadow-2xl p-6 sm:p-10 text-center border border-gray-700" id="main-content" role="main">
   <header>
-    <!-- Logotipo UniTV (SVG) -->
-    <div class="mx-auto mb-6 rounded-full border-4 border-blue-200 shadow-lg p-1 w-24 h-24 overflow-hidden bg-white flex items-center justify-center">
-      <svg aria-labelledby="logoTitle logoDesc" class="w-full h-full object-cover" height="96" role="img" viewBox="0 0 200 200" width="96" xmlns="http://www.w3.org/2000/svg">
-        <title id="logoTitle">Logotipo UniTV</title>
-        <desc id="logoDesc">Marca UniTV com fundo gradiente azul e detalhes brancos</desc>
-        <defs>
-          <linearGradient id="g1" x1="0%" x2="100%" y1="0%" y2="100%">
-            <stop offset="0%" stop-color="#0056b3"></stop>
-            <stop offset="100%" stop-color="#00a3ff"></stop>
-          </linearGradient>
-        </defs>
-        <rect fill="url(#g1)" height="100%" rx="36" ry="36" width="100%"></rect>
-        <g fill="#fff" transform="translate(40,44) scale(0.8)">
-          <path d="M20 10h60v12H20zM20 30h60v12H20zM20 50h60v12H20z" opacity="0.95"></path>
-          <circle cx="110" cy="30" opacity="0.95" r="18"></circle>
-        </g>
-      </svg>
+    <!-- Logotipo UniTV (Imagem Externa) -->
+    <div class="mx-auto mb-6 rounded-full border-4 border-blue-400 shadow-lg p-1 w-24 h-24 overflow-hidden bg-gray-800 flex items-center justify-center">
+      <img 
+        src="https://www.novacanaapage.com.br/uploads/images/hy9jsh5nunuc11p2v4dy3hy7e5ed/w_1600/Design-sem-nome--18-.png" 
+        alt="Logotipo UniTV oficial" 
+        class="w-full h-full object-cover"
+        onerror="this.onerror=null;this.src='https://placehold.co/96x96/0056b3/ffffff?text=Logo+UniTV'"
+      />
     </div>
-    <h1 class="text-4xl font-extrabold text-gray-800 mb-2">Download Oficial UniTV</h1>
-    <p class="text-gray-500 mb-10 text-lg">Escolha seu dispositivo e comece a assistir em minutos. **Instalação rápida e segura.**</p>
+    <h1 class="text-4xl font-extrabold text-white mb-2">Download Oficial UniTV</h1>
+    <p class="text-gray-300 mb-10 text-lg">Escolha seu dispositivo e comece a assistir em minutos. **Instalação rápida e segura.**</p>
   </header>
 
+  <!-- Secção Principal: Links de Download (Layout de Cartões Visuais) -->
   <section aria-labelledby="download-title" class="mb-10">
-    <h2 class="text-2xl font-bold text-gray-800 mb-6 text-center" id="download-title">Selecione seu Dispositivo</h2>
+    <h2 class="text-2xl font-bold text-white mb-6 text-center" id="download-title">Selecione seu Dispositivo</h2>
     
-    <!-- NOVO SELETOR DE DISPOSITIVO VISUAL (MAIS INTUITIVO) -->
+    <!-- Grid com 3 colunas para dispositivos maiores -->
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
       
       <!-- Card para Celular Android -->
-      <a aria-label="Baixar para Celular Android" class="download-card flex flex-col items-center p-6 rounded-2xl text-gray-800 hover:text-blue-600" href="http://zipa.la/unibox" rel="noopener noreferrer" role="link" target="_blank" id="btn-android">
-        <span class="text-5xl mb-3 text-green-500">
-          <!-- Ícone de Celular -->
+      <a aria-label="Baixar para Celular Android" class="download-card flex flex-col items-center p-6 rounded-2xl text-white hover:text-blue-400" href="http://zipa.la/unibox" rel="noopener noreferrer" role="link" target="_blank" id="btn-android">
+        <span class="text-5xl mb-3 text-green-400">
+          <!-- Ícone de Celular (SVG) -->
           <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
             <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
             <line x1="12" y1="18" x2="12" y2="18"></line>
           </svg>
         </span>
         <h3 class="font-bold text-xl mb-1">Android (Celular/Tablet)</h3>
-        <p class="text-sm text-gray-500">Para assistir em movimento. Versão ideal para telas menores.</p>
+        <p class="text-sm text-gray-400">Para assistir em movimento. Versão ideal para telas menores.</p>
         <span class="mt-4 inline-block px-4 py-2 bg-blue-600 text-white font-semibold rounded-lg text-sm shadow-md hover:bg-blue-700">BAIXAR APK</span>
       </a>
 
       <!-- Card para TV Box / Dispositivos Maiores -->
-      <a aria-label="Baixar para TV Box" class="download-card flex flex-col items-center p-6 rounded-2xl text-gray-800 hover:text-blue-600" href="http://zipa.la/unibox" rel="noopener noreferrer" role="link" target="_blank" id="btn-tvbox">
-        <span class="text-5xl mb-3 text-blue-500">
-          <!-- Ícone de Televisão -->
+      <a aria-label="Baixar para TV Box" class="download-card flex flex-col items-center p-6 rounded-2xl text-white hover:text-blue-400" href="http://zipa.la/unibox" rel="noopener noreferrer" role="link" target="_blank" id="btn-tvbox">
+        <span class="text-5xl mb-3 text-blue-400">
+          <!-- Ícone de Televisão (SVG) -->
           <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
             <rect x="2" y="7" width="20" height="15" rx="2" ry="2"></rect>
             <polyline points="17 2 12 7 7 2"></polyline>
           </svg>
         </span>
         <h3 class="font-bold text-xl mb-1">TV Box / Smart TV Android</h3>
-        <p class="text-sm text-gray-500">Recomendado para tela grande e controle remoto. Melhor qualidade.</p>
+        <p class="text-sm text-gray-400">Recomendado para tela grande e controle remoto. Melhor qualidade.</p>
         <span class="mt-4 inline-block px-4 py-2 bg-blue-600 text-white font-semibold rounded-lg text-sm shadow-md hover:bg-blue-700">BAIXAR APK</span>
       </a>
 
       <!-- Card para Fire TV -->
-      <a aria-label="Baixar para Fire TV" class="download-card flex flex-col items-center p-6 rounded-2xl text-gray-800 hover:text-blue-600" href="http://zipa.la/unibox" rel="noopener noreferrer" role="link" target="_blank" id="btn-firetv">
-        <span class="text-5xl mb-3 text-red-500">
-          <!-- Ícone de Fogo (Representando Fire TV) -->
+      <a aria-label="Baixar para Fire TV" class="download-card flex flex-col items-center p-6 rounded-2xl text-white hover:text-blue-400" href="http://zipa.la/unibox" rel="noopener noreferrer" role="link" target="_blank" id="btn-firetv">
+        <span class="text-5xl mb-3 text-red-400">
+          <!-- Ícone de Fogo (Representando Fire TV Stick) (SVG) -->
           <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
             <path d="M10.8 17.5c-.8.8-1.7 1.2-2.7 1.2-1.2 0-2.3-.6-3-1.6 0-3.3 3.3-5.2 3.3-5.2s.5-3.3-1.5-5.2C5.3 4.6 6.3 3 8 3c2.7 0 4.3 2.5 4.3 2.5.8 1.5 1.7 2.5 2.7 2.5 1.2 0 2.3-.6 3-1.6 0 3.3-3.3 5.2-3.3 5.2s-.5 3.3 1.5 5.2c.7 1.2-.3 2.8-2 2.8-2.7 0-4.3-2.5-4.3-2.5z"></path>
           </svg>
         </span>
         <h3 class="font-bold text-xl mb-1">Amazon Fire Stick/TV</h3>
-        <p class="text-sm text-gray-500">Otimizado para a linha de aparelhos Amazon, fácil de usar com controle.</p>
+        <p class="text-sm text-gray-400">Otimizado para a linha de aparelhos Amazon, fácil de usar com controle.</p>
         <span class="mt-4 inline-block px-4 py-2 bg-blue-600 text-white font-semibold rounded-lg text-sm shadow-md hover:bg-blue-700">BAIXAR APK</span>
       </a>
     </div>
   </section>
   
-  <!-- Banner Web (Mantido como opção de acesso rápido) -->
+  <!-- Banner Web (Acesso direto via navegador) -->
   <section aria-labelledby="banner-title" class="mb-10">
     <a aria-label="UniTV Web chegou - abrir uvweboficial.com" class="w-full inline-flex items-center justify-center px-6 py-4 rounded-2xl bg-gradient-to-r from-purple-600 to-pink-500 text-white font-extrabold shadow-lg hover:opacity-95 focus:outline-none focus:ring-2 focus:ring-purple-300" href="https://www.uvweboficial.com" rel="noopener noreferrer" role="link" target="_blank">
       <span aria-hidden="true" class="mr-3 text-2xl">🖥️</span>
@@ -130,9 +126,65 @@
     </a>
   </section>
 
-  <!-- Seções Secundárias (Menos Proeminentes) -->
-  <section class="divide-y divide-gray-200">
-    <!-- Manual de Instalação e Uso -->
+  <!-- Secção de Sugestão de Conteúdo com Gemini API (CURADOR) -->
+  <section aria-labelledby="ai-suggestion-title" class="mb-10 p-6 bg-yellow-900/30 rounded-2xl border border-yellow-800 shadow-md">
+    <h2 class="text-xl font-bold text-white mb-4" id="ai-suggestion-title">Curador IA UniTV</h2>
+    <button class="w-full inline-flex items-center justify-center px-6 py-3 bg-yellow-500 text-white font-semibold rounded-xl shadow-lg hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-400 disabled:opacity-50 transition duration-300" id="generate-suggestion-btn" onclick="generateSuggestion()">
+      <span aria-hidden="true" class="mr-2 text-xl">✨</span>
+      Gerar Sugestão de Conteúdo
+    </button>
+    
+    <!-- Área de Resultados e Loading (Layout Flex para Imagem e Texto) -->
+    <div class="mt-4 p-4 bg-gray-800 rounded-lg border border-gray-700 min-h-32 relative flex flex-col md:flex-row items-center md:items-start" id="gemini-suggestion-wrapper">
+      
+      <!-- Container da Capa (Capa usa placeholder dinâmico) -->
+      <div class="w-32 h-48 flex-shrink-0 mb-4 md:mb-0 md:mr-4">
+          <!-- Placeholder de Imagem para a Capa -->
+          <img id="suggestion-image" src="https://placehold.co/150x225/A0AEC0/ffffff?text=Capa" class="rounded-lg shadow-md w-full h-full object-cover" alt="Capa do conteúdo sugerido"/>
+      </div>
+      
+      <!-- Container do Texto da Sugestão -->
+      <div class="w-full text-center md:text-left">
+          <h3 id="suggestion-title" class="text-xl font-extrabold text-white mb-1">Curador UniTV</h3>
+          <p id="suggestion-details" class="text-sm font-semibold text-yellow-400 mb-2">Pronto para a sua sugestão!</p>
+          <p class="text-gray-300 text-sm" id="suggestion-text">Clique no botão acima para receber uma sugestão personalizada do nosso Curador IA!</p>
+      </div>
+
+      <!-- Spinner de Loading (Visível apenas durante a chamada à API) -->
+      <div id="loading-spinner" class="hidden absolute inset-0 bg-gray-800 bg-opacity-80 flex items-center justify-center rounded-lg">
+        <div class="animate-spin rounded-full h-8 w-8 border-b-2 border-yellow-400"></div>
+        <p class="ml-3 text-yellow-400 font-semibold">A pensar na melhor sugestão...</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Secção de Suporte Rápido com Gemini API (FAQ Interativa) -->
+  <section aria-labelledby="ai-faq-title" class="mb-10 p-6 bg-blue-900/30 rounded-2xl border border-blue-800 shadow-md">
+      <h2 class="text-xl font-bold text-white mb-4" id="ai-faq-title">Assistente de Suporte Rápido IA</h2>
+      <p class="text-gray-300 mb-4 text-sm">Tem dúvidas sobre **instalação**, **ativação** ou **funcionalidades**? Pergunte à nossa IA!</p>
+      
+      <!-- Input e Botão de Pergunta (Layout flexível para mobile/desktop) -->
+      <div class="flex flex-col sm:flex-row gap-3">
+        <input type="text" id="faq-input" placeholder="Ex: Preciso de internet para usar o Playback?" class="w-full p-3 bg-gray-900 text-white border border-blue-700 rounded-xl focus:ring-blue-500 focus:border-blue-500 transition duration-150" aria-label="Introduza a sua questão sobre o UniTV">
+        <button class="flex-shrink-0 px-6 py-3 bg-blue-600 text-white font-semibold rounded-xl shadow-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 disabled:opacity-50 transition duration-300" id="ask-faq-btn" onclick="askFAQ()">
+          <span class="mr-1 text-xl">💬</span>
+          Perguntar à IA
+        </button>
+      </div>
+
+      <!-- Área de Resposta e Loading do FAQ -->
+      <div class="mt-4 text-left p-3 bg-gray-800 rounded-lg border border-gray-700 min-h-16 relative" id="faq-answer-wrapper">
+        <p class="text-gray-400 text-sm italic" id="faq-answer-text">Aguardando a sua questão...</p>
+        <div id="faq-loading-spinner" class="hidden absolute inset-0 bg-gray-800 bg-opacity-80 flex items-center justify-center rounded-lg">
+          <div class="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-400"></div>
+          <p class="ml-3 text-blue-400 font-semibold">A procurar a resposta...</p>
+        </div>
+      </div>
+  </section>
+
+  <!-- Seções Secundárias (Informações Adicionais) -->
+  <section class="divide-y divide-gray-700">
+    <!-- Manual de Instalação e Uso (Seção Expansível) -->
     <div class="py-4">
       <button aria-controls="manual-content" aria-expanded="false" aria-label="Mostrar ou esconder o manual de instalação e uso" class="btn-secondary inline-flex items-center justify-center w-full px-6 py-3 text-base font-semibold rounded-xl shadow-md" id="toggle-manual-btn" onclick="toggleManual()">
         <span aria-hidden="true" class="btn-icon mr-2">
@@ -144,30 +196,36 @@
         </span>
         <span class="btn-text">Ver Manual de Instalação e Uso</span>
       </button>
-      <p class="text-sm text-gray-500 mt-2">Instruções rápidas, dicas e solução de problemas.</p>
+      <p class="text-sm text-gray-400 mt-2">Instruções rápidas, dicas e solução de problemas.</p>
       
-      <!-- Conteúdo do Manual -->
+      <!-- Conteúdo do Manual (Visível apenas quando expandido) -->
       <div aria-hidden="true" aria-labelledby="manual-title" class="hidden text-left pt-6" id="manual-content" role="region">
-        <h2 class="text-xl font-bold text-gray-800 mb-4 pb-2">Guia Completo de Instalação e Uso</h2>
-        <div class="mb-4 p-4 bg-blue-50 rounded-lg shadow-inner border border-blue-200">
-          <h3 class="font-bold text-blue-800 mb-2">1. Instalação do Aplicativo</h3>
-          <ul class="list-disc ml-5 text-sm text-gray-700 space-y-1">
+        <h2 class="text-xl font-bold text-white mb-4 pb-2">Guia Completo de Instalação e Uso</h2>
+        
+        <!-- Bloco 1: Instalação -->
+        <div class="mb-4 p-4 bg-blue-900/30 rounded-lg shadow-inner border border-blue-800">
+          <h3 class="font-bold text-blue-400 mb-2">1. Instalação do Aplicativo</h3>
+          <ul class="list-disc ml-5 text-sm text-gray-300 space-y-1">
             <li>Escolha o link de download compatível com seu dispositivo.</li>
             <li>Após o download, abra o arquivo APK e permita a instalação de fontes desconhecidas.</li>
             <li>Conclua a instalação e abra o aplicativo UniTV.</li>
           </ul>
         </div>
-        <div class="mb-4 p-4 bg-green-50 rounded-lg shadow-inner border border-green-200">
-          <h3 class="font-bold text-green-800 mb-2">2. Ativação e Login</h3>
-          <ul class="list-disc ml-5 text-sm text-gray-700 space-y-1">
+        
+        <!-- Bloco 2: Ativação -->
+        <div class="mb-4 p-4 bg-green-900/30 rounded-lg shadow-inner border border-green-800">
+          <h3 class="font-bold text-green-400 mb-2">2. Ativação e Login</h3>
+          <ul class="list-disc ml-5 text-sm text-gray-300 space-y-1">
             <li>Insira o código de ativação fornecido pela Capini Serviços.</li>
             <li>Verifique se está conectado à internet para validar o acesso.</li>
             <li>Após o login, o conteúdo será liberado automaticamente.</li>
           </ul>
         </div>
-        <div class="mb-4 p-4 bg-yellow-50 rounded-lg shadow-inner border border-yellow-200">
-          <h3 class="font-bold text-yellow-800 mb-2">3. Funcionalidades Principais</h3>
-          <ul class="list-disc ml-5 text-sm text-gray-700 space-y-1">
+        
+        <!-- Bloco 3: Funcionalidades -->
+        <div class="mb-4 p-4 bg-yellow-900/30 rounded-lg shadow-inner border border-yellow-800">
+          <h3 class="font-bold text-yellow-400 mb-2">3. Funcionalidades Principais</h3>
+          <ul class="list-disc ml-5 text-sm text-gray-300 space-y-1">
             <li>Mais de 65 canais em qualidade 4K (UHD).</li>
             <li>Playback disponível por até 7 dias.</li>
             <li>Suporte a até 2 dispositivos simultâneos.</li>
@@ -175,9 +233,11 @@
             <li>Interface intuitiva com busca por nome, gênero e idioma.</li>
           </ul>
         </div>
-        <div class="mb-4 p-4 bg-red-50 rounded-lg shadow-inner border border-red-200">
-          <h3 class="font-bold text-red-800 mb-2">4. Dicas e Solução de Problemas</h3>
-          <ul class="list-disc ml-5 text-sm text-gray-700 space-y-1">
+        
+        <!-- Bloco 4: Suporte/Dicas -->
+        <div class="mb-4 p-4 bg-red-900/30 rounded-lg shadow-inner border border-red-800">
+          <h3 class="font-bold text-red-400 mb-2">4. Dicas e Solução de Problemas</h3>
+          <ul class="list-disc ml-5 text-sm text-gray-300 space-y-1">
             <li>Em caso de travamentos, verifique sua conexão de internet.</li>
             <li>Limpe o cache do aplicativo nas configurações do dispositivo.</li>
             <li>Para suporte técnico, utilize o botão de WhatsApp disponível na página.</li>
@@ -187,7 +247,7 @@
       </div>
     </div>
     
-    <!-- Sobre o UniTV -->
+    <!-- Sobre o UniTV (Seção Expansível) -->
     <div class="py-4">
       <button aria-controls="sobre-content" aria-expanded="false" aria-label="Mostrar ou esconder informações sobre o UniTV" class="btn-secondary inline-flex items-center justify-center w-full px-6 py-3 text-base font-semibold rounded-xl shadow-md" id="toggle-sobre-btn" onclick="toggleSobre()">
         <span aria-hidden="true" class="btn-icon mr-2">
@@ -198,18 +258,18 @@
         <span class="btn-text">Sobre o UniTV</span>
       </button>
       
-      <!-- Conteúdo Sobre o UniTV -->
+      <!-- Conteúdo Sobre o UniTV (Visível apenas quando expandido) -->
       <div aria-hidden="true" aria-labelledby="toggle-sobre-btn" class="hidden text-left pt-6" id="sobre-content" role="region">
-        <p class="text-sm text-gray-700 leading-relaxed mt-2">
+        <p class="text-sm text-gray-300 leading-relaxed mt-2">
           O UniTV pertence ao grupo HTV, uma empresa chinesa que atende em diversos países do mundo, dona também do Tele Latino que é vendido em países latinos e espanhóis, A-TV vendido nos Estados Unidos, YouCine e vários outros aplicativos no mercado.
         </p>
-        <p class="text-sm text-gray-700 leading-relaxed mt-2">
+        <p class="text-sm text-gray-300 leading-relaxed mt-2">
           O UniTV, por ser de uma empresa gigante, tem hoje o melhor custo-benefício do mercado, entregando boa qualidade e estabilidade aliado a um aplicativo completo com um excelente preço.
         </p>
-        <p class="text-sm text-gray-700 leading-relaxed mt-2">
+        <p class="text-sm text-gray-300 leading-relaxed mt-2">
           Outro ponto forte do UniTV são seus conteúdos on-demand, por se tratar de uma empresa antiga no mercado, possui um dos maiores catálogos de filmes e séries.
         </p>
-        <p class="text-sm text-gray-700 leading-relaxed mt-2">
+        <p class="text-sm text-gray-300 leading-relaxed mt-2">
           Além disso, ressaltamos que ele possui tudo em um único aplicativo, ou seja, os canais ao vivo e os conteúdos on-demand no mesmo aplicativo, sem necessidade de instalar vários aplicativos no aparelho.
         </p>
       </div>
@@ -218,9 +278,10 @@
 
 </main>
 
-<footer class="text-center text-sm text-gray-500 py-4 mt-8">
+<!-- Rodapé -->
+<footer class="text-center text-sm text-gray-400 py-4 mt-8">
   © 2025 Capini Serviços. Todos os direitos reservados.
-  <p class="text-xs text-gray-400 mt-1">Versão v1.0.3 (Mais Intuitiva)</p>
+  <p class="text-xs text-gray-500 mt-1">Versão v1.0.8 (Dark Mode)</p>
 </footer>
 
 <!-- Botão flutuante de Suporte (WhatsApp) -->
@@ -233,8 +294,15 @@
   Suporte
 </a>
 
-<!-- JavaScript para as funções de expandir/esconder (toggle) -->
+<!-- Bloco JavaScript Principal: Funções de Interatividade e Gemini API -->
 <script>
+  // A CHAVE DA API FOI FORNECIDA NA CONVERSA
+  const apiKey = "AIzaSyDBFOpga6ek8jf0wG6quHc1akzwinMdIlA"; 
+  // URL base para chamadas à API Gemini (Modelo flash)
+  const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${apiKey}`;
+
+  /* --- Funções de Toggle (Expansão de Conteúdo) --- */
+
   /**
    * Função para alternar a visibilidade da seção "Sobre o UniTV".
    */
@@ -247,7 +315,7 @@
     content.classList.toggle('hidden');
     const willShow = !content.classList.contains('hidden');
 
-    // Atualiza atributos de acessibilidade
+    // Atualiza atributos de acessibilidade (ARIA)
     button.setAttribute('aria-expanded', String(willShow));
     content.setAttribute('aria-hidden', String(!willShow));
 
@@ -271,16 +339,16 @@
     content.classList.toggle('hidden');
     const willShow = !content.classList.contains('hidden');
 
-    // Atualiza atributos de acessibilidade
+    // Atualiza atributos de acessibilidade (ARIA)
     button.setAttribute('aria-expanded', String(willShow));
     content.setAttribute('aria-hidden', String(!willShow));
 
-    // Atualiza texto e ícone do botão
+    // Atualiza texto e ícone do botão (Muda o ícone para 'X' ao abrir)
     const textSpan = button.querySelector('.btn-text');
     const iconSpan = button.querySelector('.btn-icon');
     if (textSpan) textSpan.textContent = willShow ? 'Esconder Manual' : 'Ver Manual de Instalação e Uso';
     
-    // Atualiza o ícone (Mostra X ao abrir)
+    // Atualiza o ícone (Mostra 'X' ao abrir, ícone de livro ao fechar)
     if (iconSpan) {
       iconSpan.innerHTML = willShow
         ? `<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>`
@@ -289,6 +357,269 @@
 
     // Rola para a seção se ela for aberta
     if (willShow) content.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+
+  /* --- Funções Gemini (Curador de Conteúdo) --- */
+
+  /**
+   * Mostra/Esconde o spinner de loading e desativa o botão do Curador IA durante a chamada à API.
+   * @param {boolean} show - Se deve mostrar (true) ou esconder (false).
+   */
+  function toggleLoading(show) {
+    const spinner = document.getElementById('loading-spinner');
+    const button = document.getElementById('generate-suggestion-btn');
+    if (show) {
+      spinner.classList.remove('hidden');
+      button.disabled = true; // Desativa o botão para evitar cliques duplicados
+    } else {
+      spinner.classList.add('hidden');
+      button.disabled = false; // Reativa o botão
+    }
+  }
+
+  /**
+   * Função utilitária para gerar uma cor hex única e vibrante a partir de uma string (pseudo-aleatória).
+   */
+  function stringToColor(str) {
+      let hash = 0;
+      for (let i = 0; i < str.length; i++) {
+          hash = str.charCodeAt(i) + ((hash << 5) - hash);
+      }
+      let color = '#';
+      for (let i = 0; i < 3; i++) {
+          let value = (hash >> (i * 8)) & 0xFF;
+          // Garante que a cor é clara o suficiente para bom contraste com texto branco
+          value = (value + 128) % 256; 
+          color += ('00' + value.toString(16)).substr(-2);
+      }
+      return color;
+  }
+
+  /**
+   * Função para criar o URL do placeholder de imagem (capa) com cor dinâmica.
+   * Isto simula puxar uma capa da internet de forma segura.
+   * @param {string} title - Título do conteúdo para o texto da capa.
+   * @returns {string} O URL do placeholder.
+   */
+  function createPlaceholderUrl(title) {
+      // Gera uma cor de fundo única baseada no título
+      const bgColor = stringToColor(title).substring(1); 
+      const textColor = 'FFFFFF'; // Texto branco para alto contraste
+      // Limita e sanitiza o título para o URL
+      const sanitizedTitle = title.replace(/[\s\W]+/g, '+').substring(0, 20); 
+      return `https://placehold.co/150x225/${bgColor}/${textColor}?text=${sanitizedTitle}`;
+  }
+
+  /**
+   * Chama a API do Gemini para gerar uma sugestão de conteúdo estruturada (JSON).
+   */
+  async function generateSuggestion() {
+    toggleLoading(true);
+    // Referências aos elementos da UI
+    const suggestionContainer = document.getElementById('suggestion-text');
+    const titleContainer = document.getElementById('suggestion-title');
+    const detailsContainer = document.getElementById('suggestion-details');
+    const imageContainer = document.getElementById('suggestion-image');
+    
+    // Define estados iniciais de carregamento na UI
+    titleContainer.textContent = "A pensar...";
+    detailsContainer.textContent = "A Curadoria IA está a trabalhar...";
+    suggestionContainer.textContent = "Aguarde, a melhor opção está a caminho!";
+    imageContainer.src = `https://placehold.co/150x225/A0AEC0/ffffff?text=A+Curar`;
+
+    // System Prompt: define a persona e o formato de saída
+    const systemPrompt = "Aja como um curador de conteúdo especializado do UniTV. A sua resposta deve ser um objeto JSON que sugere um tipo de conteúdo para assistir, baseado num estado de espírito. Mencione sempre um dos principais benefícios do UniTV (4K, Playback, ou vasto catálogo On-Demand) no texto da sugestão. Responda em português de Portugal (europeu).";
+    const userQuery = "Sugere um título de conteúdo fictício, o tipo ('Filme', 'Série', ou 'Canal ao Vivo') e uma sugestão de texto concisa (máximo 40 palavras).";
+
+    // Estrutura JSON requerida (Schema)
+    const jsonSchema = {
+        type: "OBJECT",
+        properties: {
+            "title": { "type": "STRING", "description": "Título fictício da sugestão (ex: 'Caça ao Tesouro', 'Tudo em Dia')." },
+            "type": { "type": "STRING", "description": "Tipo de conteúdo: 'Filme', 'Série', ou 'Canal ao Vivo'." },
+            "suggestion_text": { "type": "STRING", "description": "Parágrafo conciso com a sugestão e menção a um benefício (máximo 40 palavras)." }
+        },
+        required: ["title", "type", "suggestion_text"]
+    };
+
+    const payload = {
+      contents: [{ parts: [{ text: userQuery }] }],
+      generationConfig: {
+          responseMimeType: "application/json",
+          responseSchema: jsonSchema
+      },
+      systemInstruction: {
+        parts: [{ text: systemPrompt }]
+      },
+    };
+
+    try {
+      let response;
+      let retries = 0;
+      const maxRetries = 5;
+
+      // Implementação do Backoff Exponencial para lidar com falhas temporárias da rede/API
+      while (retries < maxRetries) {
+        response = await fetch(apiUrl, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+
+        if (response.ok) {
+          break; // Sucesso
+        }
+
+        retries++;
+        if (retries < maxRetries) {
+          const delay = Math.pow(2, retries) * 1000;
+          await new Promise(resolve => setTimeout(resolve, delay)); // Espera exponencial
+        } else {
+          throw new Error(`Falha na API após ${maxRetries} tentativas.`);
+        }
+      }
+
+      if (!response || !response.ok) {
+        throw new Error('Falha ao obter sugestão da IA. Código de status: ' + (response ? response.status : 'N/A'));
+      }
+
+      const result = await response.json();
+      // Extrai o texto JSON da resposta da API
+      const jsonText = result.candidates?.[0]?.content?.parts?.[0]?.text;
+      
+      if (!jsonText) throw new Error("Resposta JSON vazia ou incompleta.");
+      
+      const suggestionData = JSON.parse(jsonText);
+
+      // Atualiza a interface com os dados estruturados
+      const title = suggestionData.title || "Sugestão Desconhecida";
+      titleContainer.textContent = title;
+      detailsContainer.textContent = `Tipo: ${suggestionData.type || 'N/A'}`;
+      suggestionContainer.textContent = suggestionData.suggestion_text || "Sugestão de texto indisponível.";
+      
+      // Atualização da capa com imagem dinâmica
+      imageContainer.src = createPlaceholderUrl(title);
+
+    } catch (error) {
+      console.error("Erro na geração de sugestão:", error);
+      // Feedback de erro na UI
+      titleContainer.textContent = "Erro de Conexão";
+      detailsContainer.textContent = "Por favor, tente novamente.";
+      suggestionContainer.textContent = "Não foi possível carregar a sugestão. Certifique-se de que a API Key é válida.";
+      imageContainer.src = `https://placehold.co/150x225/EF4444/FFFFFF?text=ERRO`;
+    } finally {
+      toggleLoading(false); // Esconde o spinner
+    }
+  }
+
+  /* --- Funções Gemini (Assistente de Suporte Rápido - FAQ) --- */
+
+  /**
+   * Mostra/Esconde o spinner de loading e desativa os controlos do FAQ.
+   * @param {boolean} show - Se deve mostrar (true) ou esconder (false).
+   */
+  function toggleFAQLoading(show) {
+    const spinner = document.getElementById('faq-loading-spinner');
+    const button = document.getElementById('ask-faq-btn');
+    const input = document.getElementById('faq-input');
+    if (show) {
+      spinner.classList.remove('hidden');
+      button.disabled = true;
+      input.disabled = true;
+    } else {
+      spinner.classList.add('hidden');
+      button.disabled = false;
+      input.disabled = false;
+    }
+  }
+
+  /**
+   * Chama a API do Gemini para responder a perguntas frequentes usando o conteúdo da página como contexto.
+   */
+  async function askFAQ() {
+    const question = document.getElementById('faq-input').value.trim();
+    const answerContainer = document.getElementById('faq-answer-text');
+
+    if (question === "") {
+        answerContainer.textContent = "Por favor, introduza a sua questão.";
+        return;
+    }
+    
+    toggleFAQLoading(true);
+    answerContainer.textContent = "A procurar a resposta...";
+
+
+    // Conteúdo da página para contextualizar a resposta da IA (base de conhecimento)
+    const context = `
+        ### Manual de Instalação e Uso
+        1. Instalação: Baixe o APK, abra e permita a instalação de fontes desconhecidas.
+        2. Ativação: Use o código de ativação fornecido pela Capini Serviços. Requer internet para validar.
+        3. Funcionalidades: 65+ canais 4K (UHD), Playback (replay) de 7 dias, Suporte a 2 dispositivos simultâneos, Vasto Catálogo On-Demand (filmes e séries).
+        4. Suporte/Dicas: Em caso de travamentos, verifique a conexão ou limpe o cache. Suporte via WhatsApp. Atualizações são automáticas.
+        
+        ### Sobre UniTV
+        O UniTV é do grupo HTV (empresa chinesa), tem excelente custo-benefício e estabilidade. Possui conteúdo ao vivo e On-Demand num único aplicativo.
+    `;
+
+    // System Prompt: define a persona (suporte) e restringe a resposta ao contexto
+    const systemPrompt = `Aja como um agente de suporte técnico amigável para o UniTV. A sua tarefa é responder à questão do utilizador de forma concisa (máximo 50 palavras) e direta, utilizando **apenas** o contexto fornecido abaixo. Se a resposta não estiver no contexto, responda que essa informação não está disponível. Responda em português de Portugal.
+
+    CONTEXTO:
+    ${context}
+    `;
+
+    const userQuery = `Questão: ${question}`;
+
+    const payload = {
+        contents: [{ parts: [{ text: userQuery }] }],
+        systemInstruction: {
+            parts: [{ text: systemPrompt }]
+        },
+    };
+
+    try {
+        let response;
+        let retries = 0;
+        const maxRetries = 5;
+
+        // Implementação do Backoff Exponencial para o FAQ
+        while (retries < maxRetries) {
+            response = await fetch(apiUrl, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(payload)
+            });
+
+            if (response.ok) {
+                break;
+            }
+
+            retries++;
+            if (retries < maxRetries) {
+                const delay = Math.pow(2, retries) * 1000;
+                await new Promise(resolve => setTimeout(resolve, delay));
+            } else {
+                throw new Error(`Falha na API após ${maxRetries} tentativas.`);
+            }
+        }
+
+        if (!response || !response.ok) {
+            throw new Error('Falha ao obter resposta da IA. Código de status: ' + (response ? response.status : 'N/A'));
+        }
+
+        const result = await response.json();
+        const text = result.candidates?.[0]?.content?.parts?.[0]?.text || "Desculpe, a IA não conseguiu processar a sua questão neste momento.";
+        
+        // Exibe a resposta final
+        answerContainer.textContent = text;
+
+    } catch (error) {
+        console.error("Erro na geração da FAQ:", error);
+        answerContainer.textContent = "Erro ao contactar a IA. Por favor, tente novamente ou use o suporte via WhatsApp.";
+    } finally {
+        toggleFAQLoading(false); // Esconde o spinner e reativa os controlos
+    }
   }
 </script>
 </body>
