@@ -8,7 +8,7 @@
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Meta tags SEO -->
+  <!-- SEO -->
   <meta name="description" content="Central oficial UniTV - Download do app, suporte técnico e informações sobre a plataforma.">
   <meta name="theme-color" content="#2563eb" />
 
@@ -31,54 +31,36 @@
       <h2 id="download-title" class="text-2xl font-semibold mb-6">📲 Download do Aplicativo</h2>
       <div class="grid md:grid-cols-3 gap-6">
         <a href="#" class="group block bg-gray-700 hover:bg-blue-600 rounded-xl p-6 transition text-center">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 mx-auto mb-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 10l5 5m0 0l5-5m-5 5V3" />
-          </svg>
           <h3 class="text-lg font-semibold">Android (APK)</h3>
           <p class="text-sm opacity-80 mt-1">Baixe e instale manualmente</p>
         </a>
-
         <a href="#" class="group block bg-gray-700 hover:bg-green-600 rounded-xl p-6 transition text-center">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 mx-auto mb-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M12 5l7 7-7 7" />
-          </svg>
           <h3 class="text-lg font-semibold">Smart TVs</h3>
           <p class="text-sm opacity-80 mt-1">Configuração rápida em TVs Android</p>
         </a>
-
         <a href="#" class="group block bg-gray-700 hover:bg-purple-600 rounded-xl p-6 transition text-center">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 mx-auto mb-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m2 0a2 2 0 100-4H7a2 2 0 100 4h10z" />
-          </svg>
           <h3 class="text-lg font-semibold">Outros Dispositivos</h3>
           <p class="text-sm opacity-80 mt-1">Fire TV, TV Box e outros</p>
         </a>
       </div>
     </section>
 
-    <!-- Manual Section -->
-    <section class="bg-gray-800 rounded-2xl shadow-lg p-8">
-      <div class="flex items-center justify-between mb-6">
-        <h2 class="text-2xl font-semibold">📘 Manual de Uso</h2>
-        <button id="toggle-manual-btn" class="text-sm px-3 py-1 bg-blue-600 hover:bg-blue-700 rounded-lg transition">Expandir</button>
-      </div>
-      <div id="manual-content" class="hidden space-y-4">
-        <p>1️⃣ Baixe o app UniTV conforme seu dispositivo.</p>
-        <p>2️⃣ Faça login com suas credenciais fornecidas pela equipe.</p>
-        <p>3️⃣ Escolha seu canal ou conteúdo favorito e divirta-se.</p>
-        <p>4️⃣ Em caso de erro, entre em contato pelo WhatsApp abaixo.</p>
-      </div>
-    </section>
-
-    <!-- Sobre Section -->
-    <section class="bg-gray-800 rounded-2xl shadow-lg p-8">
-      <div class="flex items-center justify-between mb-6">
-        <h2 class="text-2xl font-semibold">ℹ️ Sobre o UniTV</h2>
-        <button id="toggle-about-btn" class="text-sm px-3 py-1 bg-blue-600 hover:bg-blue-700 rounded-lg transition">Expandir</button>
-      </div>
-      <div id="about-content" class="hidden space-y-4">
-        <p>UniTV é uma plataforma de streaming desenvolvida para simplificar o acesso a conteúdos de alta qualidade com estabilidade e suporte dedicado.</p>
-        <p>Nosso compromisso é oferecer a melhor experiência em entretenimento digital.</p>
+    <!-- Planos -->
+    <section class="bg-gray-800 rounded-2xl shadow-lg p-8 text-center">
+      <h2 class="text-2xl font-semibold mb-6">💰 Planos e Valores</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-gray-700 p-6 rounded-xl">
+          <h3 class="text-xl font-semibold mb-2">Mensal</h3>
+          <p class="text-3xl font-bold text-green-400 mb-4">R$ 20,00</p>
+          <p class="text-gray-300 mb-4">Acesso completo por 30 dias.</p>
+          <a href="#" class="inline-block bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg font-semibold transition">Assinar Mensal</a>
+        </div>
+        <div class="bg-gray-700 p-6 rounded-xl">
+          <h3 class="text-xl font-semibold mb-2">Anual</h3>
+          <p class="text-3xl font-bold text-green-400 mb-4">R$ 220,00</p>
+          <p class="text-gray-300 mb-4">Economize 10% e tenha 12 meses de acesso.</p>
+          <a href="#" class="inline-block bg-purple-600 hover:bg-purple-700 px-6 py-3 rounded-lg font-semibold transition">Assinar Anual</a>
+        </div>
       </div>
     </section>
 
@@ -86,40 +68,10 @@
     <section class="bg-gray-800 rounded-2xl shadow-lg p-8">
       <h2 class="text-2xl font-semibold mb-6">🤖 Assistente UniTV IA</h2>
       <div class="flex flex-col md:flex-row gap-4">
-        <button id="generate-ia-suggestion" class="w-full md:w-1/2 bg-purple-600 hover:bg-purple-700 px-6 py-3 rounded-xl font-semibold transition">Gerar Sugestão de Conteúdo</button>
-        <button id="ask-ia-btn" class="w-full md:w-1/2 bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-xl font-semibold transition">Perguntar à IA</button>
+        <input id="user-question" type="text" placeholder="Pergunte algo sobre a UniTV..." class="w-full md:w-3/4 bg-gray-700 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500">
+        <button id="ask-ia-btn" class="w-full md:w-1/4 bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-xl font-semibold transition">Perguntar</button>
       </div>
       <div id="ia-response" class="mt-6 bg-gray-700 rounded-xl p-4 text-sm text-gray-200 hidden"></div>
-    </section>
-
-    <!-- Planos Section -->
-    <section class="bg-gray-800 rounded-2xl shadow-lg p-8 text-center">
-      <h2 class="text-2xl font-semibold mb-8">💰 Planos UniTV</h2>
-      <div class="grid md:grid-cols-2 gap-6">
-        <!-- Plano Mensal -->
-        <div class="bg-gray-700 rounded-xl p-6 shadow-md hover:shadow-xl transition border border-gray-600 hover:border-blue-600">
-          <h3 class="text-xl font-bold mb-2">Plano Mensal</h3>
-          <p class="text-4xl font-extrabold text-blue-400 mb-2">R$ 20</p>
-          <p class="text-gray-300 mb-4">Acesso completo por 30 dias.</p>
-          <a href="https://wa.me/5521979823313?text=Olá! Quero assinar o plano mensal da UniTV."
-             target="_blank" rel="noopener noreferrer"
-             class="inline-block bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg font-semibold transition">
-             Assinar Mensal
-          </a>
-        </div>
-
-        <!-- Plano Anual -->
-        <div class="bg-gray-700 rounded-xl p-6 shadow-md hover:shadow-xl transition border border-gray-600 hover:border-green-600">
-          <h3 class="text-xl font-bold mb-2">Plano Anual</h3>
-          <p class="text-4xl font-extrabold text-green-400 mb-2">R$ 220</p>
-          <p class="text-gray-300 mb-4">Economize 2 meses com pagamento anual.</p>
-          <a href="https://wa.me/5521979823313?text=Olá! Quero assinar o plano anual da UniTV."
-             target="_blank" rel="noopener noreferrer"
-             class="inline-block bg-green-600 hover:bg-green-700 px-6 py-3 rounded-lg font-semibold transition">
-             Assinar Anual
-          </a>
-        </div>
-      </div>
     </section>
 
     <!-- Suporte -->
@@ -127,52 +79,16 @@
       <h2 class="text-2xl font-semibold mb-4">📞 Suporte Técnico</h2>
       <p class="text-gray-300 mb-4">Precisa de ajuda ou quer assinar? Fale conosco via WhatsApp.</p>
       <a href="https://wa.me/5521979823313" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 px-6 py-3 rounded-xl font-semibold transition">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 32 32" class="w-6 h-6">
-          <path d="M16.003 3C9.379 3 4 8.379 4 15.003c0 2.648.744 5.115 2.051 7.239L4 29l6.918-2.01A11.929 11.929 0 0016.003 27c6.624 0 12.003-5.379 12.003-11.997C28.006 8.379 22.627 3 16.003 3zM16 25a8.964 8.964 0 01-4.57-1.25l-.33-.195-4.107 1.194 1.232-3.995-.213-.343A8.973 8.973 0 017 15c0-4.963 4.037-9 9.003-9 4.963 0 9.003 4.037 9.003 9 0 4.963-4.04 9-9.003 9zm4.916-6.438c-.27-.135-1.59-.786-1.836-.875-.247-.09-.428-.135-.607.135-.18.27-.697.875-.855 1.055-.157.18-.314.203-.584.068-.27-.135-1.14-.42-2.173-1.338-.803-.717-1.345-1.603-1.503-1.873-.157-.27-.017-.416.118-.55.122-.122.27-.314.405-.472.135-.157.18-.27.27-.45.09-.18.045-.338-.022-.472-.068-.135-.607-1.462-.83-2.002-.218-.523-.44-.452-.607-.46h-.52c-.18 0-.472.068-.72.338s-.945.923-.945 2.25.967 2.61 1.102 2.79c.135.18 1.9 2.903 4.607 4.07.645.278 1.147.444 1.54.568.647.207 1.237.178 1.703.108.52-.078 1.59-.65 1.815-1.278.225-.63.225-1.17.157-1.278-.068-.108-.247-.18-.518-.315z"/>
-        </svg>
         Falar com o Suporte
       </a>
     </section>
   </main>
 
-  <!-- Rodapé -->
   <footer class="bg-gray-800 text-center py-6 text-gray-400 text-sm">
-    © 2025 UniTV. Todos os direitos reservados.  
-    <div class="mt-2 space-x-4">
-      <a href="#" class="hover:text-white">Política de Privacidade</a>
-      <a href="#" class="hover:text-white">Termos de Uso</a>
-      <a href="#" class="hover:text-white">Contato</a>
-    </div>
+    © 2025 UniTV. Todos os direitos reservados.
   </footer>
 
-  <!-- Script interativo -->
-  <script>
-    // Expansão de seções
-    const toggleManualBtn = document.getElementById('toggle-manual-btn');
-    const manualContent = document.getElementById('manual-content');
-    toggleManualBtn.addEventListener('click', () => {
-      manualContent.classList.toggle('hidden');
-      toggleManualBtn.textContent = manualContent.classList.contains('hidden') ? 'Expandir' : 'Recolher';
-    });
-
-    const toggleAboutBtn = document.getElementById('toggle-about-btn');
-    const aboutContent = document.getElementById('about-content');
-    toggleAboutBtn.addEventListener('click', () => {
-      aboutContent.classList.toggle('hidden');
-      toggleAboutBtn.textContent = aboutContent.classList.contains('hidden') ? 'Expandir' : 'Recolher';
-    });
-
-    // IA simulada
-    const iaResponse = document.getElementById('ia-response');
-    document.getElementById('generate-ia-suggestion').addEventListener('click', () => {
-      iaResponse.textContent = "🎬 Sugestão da IA: Experimente assistir 'Planeta Vivo' — documentário em 4K com som imersivo!";
-      iaResponse.classList.remove('hidden');
-    });
-
-    document.getElementById('ask-ia-btn').addEventListener('click', () => {
-      iaResponse.textContent = "🤖 A IA ainda está em treinamento. Em breve você poderá conversar com ela diretamente!";
-      iaResponse.classList.remove('hidden');
-    });
-  </script>
+  <!-- JS externo -->
+  <script src="main.js"></script>
 </body>
 </html>
