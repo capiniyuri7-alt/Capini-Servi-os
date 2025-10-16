@@ -1,534 +1,148 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Página Oficial de Download UniTV</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Central UniTV - Download e Suporte</title>
 
-<!-- Carregamento do Tailwind CSS para a estilização -->
-<script src="https://cdn.tailwindcss.com"></script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
 
+  <!-- Meta tags SEO -->
+  <meta name="description" content="Central oficial UniTV - Download do app, suporte técnico e informações sobre a plataforma.">
+  <meta name="theme-color" content="#2563eb" />
 
-<!-- Definição de estilos e classes personalizadas (Dark Mode) -->
-<style>
-  /* Define a fonte Inter para o corpo do texto */
-  body {
-    font-family: 'Inter', sans-serif;
-  }
-  /* Estilo de fundo moderno com gradiente escuro */
-  .modern-bg {
-    background: linear-gradient(135deg, #1f2937 0%, #111827 100%); /* Fundo Escuro */
-  }
-  /* Estilos para os Cards de Download */
-  .download-card {
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    background-color: #1f2937; /* Fundo do Card Escuro */
-    border: 1px solid #374151; /* Borda Escura */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-  }
-  .download-card:hover {
-    /* Efeito de hover: Sombra mais proeminente e anel azul para Dark Mode */
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5), 0 0 0 3px #1e40af; 
-    transform: translateY(-4px);
-  }
-  /* Botões Secundários (Manual e Sobre) - Estilo Dark Mode */
-  .btn-secondary {
-    border: 2px solid #3b82f6; /* Azul primário */
-    color: #3b82f6; /* Cor do texto Azul */
-    background-color: #1f2937; /* Fundo do Botão Escuro */
-    transition: background-color 0.3s ease, transform 0.2s ease;
-  }
-  .btn-secondary:hover {
-    background-color: #374151; /* Fundo hover mais escuro */
-    transform: translateY(-2px);
-  }
-  /* Estilo para o botão flutuante do WhatsApp */
-  .btn-whatsapp-float {
-    transition: transform 0.3s ease;
-  }
-  .btn-whatsapp-float:hover {
-    transform: scale(1.05);
-  }
-</style>
+  <!-- Favicon -->
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/5956/5956490.png" type="image/png">
 </head>
-<body class="modern-bg min-h-screen flex items-center justify-center p-4 flex-col">
 
-<!-- Container Principal (Centralizado e com tema escuro) -->
-<main aria-label="Conteúdo principal da página" class="w-full max-w-4xl bg-gray-900 rounded-3xl shadow-2xl p-6 sm:p-10 text-center border border-gray-700" id="main-content" role="main">
-  <header>
-    <!-- Logotipo UniTV (Imagem Externa) -->
-    <div class="mx-auto mb-6 rounded-full border-4 border-blue-400 shadow-lg p-1 w-24 h-24 overflow-hidden bg-gray-800 flex items-center justify-center">
-      <img 
-        src="https://www.novacanaapage.com.br/uploads/images/hy9jsh5nunuc11p2v4dy3hy7e5ed/w_1600/Design-sem-nome--18-.png" 
-        alt="Logotipo UniTV oficial" 
-        class="w-full h-full object-cover"
-        onerror="this.onerror=null;this.src='https://placehold.co/96x96/0056b3/ffffff?text=Logo+UniTV'"
-      />
+<body class="bg-gray-900 text-white font-sans">
+  <!-- Header -->
+  <header class="bg-gradient-to-r from-blue-600 to-purple-700 text-white py-6 shadow-lg">
+    <div class="container mx-auto px-4 text-center">
+      <h1 class="text-3xl font-bold mb-2">Central UniTV</h1>
+      <p class="text-lg opacity-90">Baixe o app e tenha suporte direto com nossa equipe</p>
     </div>
-    <h1 class="text-4xl font-extrabold text-white mb-2">Download Oficial UniTV</h1>
-    <p class="text-gray-300 mb-10 text-lg">Escolha seu dispositivo e comece a assistir em minutos. <strong>Instalação rápida e segura.</strong></p>
   </header>
 
-  <!-- Secção Principal: Links de Download (Layout de Cartões Visuais) -->
-  <section aria-labelledby="download-title" class="mb-10">
-    <h2 class="text-2xl font-bold text-white mb-6 text-center" id="download-title">Selecione seu Dispositivo</h2>
-    
-    <!-- Grid com 3 colunas para dispositivos maiores -->
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-      
-      <!-- Card para Celular Android -->
-      <a aria-label="Baixar para Celular Android" class="download-card flex flex-col items-center p-6 rounded-2xl text-white hover:text-blue-400" href="http://zipa.la/unibox" rel="noopener noreferrer" role="link" target="_blank" id="btn-android">
-        <span class="text-5xl mb-3 text-green-400">
-          <!-- Ícone de Celular (SVG) -->
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-            <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
-            <line x1="12" y1="18" x2="12" y2="18"></line>
+  <main class="container mx-auto px-4 py-12 space-y-12">
+    <!-- Download Section -->
+    <section aria-labelledby="download-title" class="bg-gray-800 rounded-2xl shadow-lg p-8">
+      <h2 id="download-title" class="text-2xl font-semibold mb-6">📲 Download do Aplicativo</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <a href="#" class="group block bg-gray-700 hover:bg-blue-600 rounded-xl p-6 transition text-center">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 mx-auto mb-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 10l5 5m0 0l5-5m-5 5V3" />
           </svg>
-        </span>
-        <h3 class="font-bold text-xl mb-1">Android (Celular/Tablet)</h3>
-        <p class="text-sm text-gray-400">Para assistir em movimento. Versão ideal para telas menores.</p>
-        <span class="mt-4 inline-block px-4 py-2 bg-blue-600 text-white font-semibold rounded-lg text-sm shadow-md hover:bg-blue-700">BAIXAR APK</span>
+          <h3 class="text-lg font-semibold">Android (APK)</h3>
+          <p class="text-sm opacity-80 mt-1">Baixe e instale manualmente</p>
+        </a>
+
+        <a href="#" class="group block bg-gray-700 hover:bg-green-600 rounded-xl p-6 transition text-center">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 mx-auto mb-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M12 5l7 7-7 7" />
+          </svg>
+          <h3 class="text-lg font-semibold">Smart TVs</h3>
+          <p class="text-sm opacity-80 mt-1">Configuração rápida em TVs Android</p>
+        </a>
+
+        <a href="#" class="group block bg-gray-700 hover:bg-purple-600 rounded-xl p-6 transition text-center">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 mx-auto mb-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m2 0a2 2 0 100-4H7a2 2 0 100 4h10z" />
+          </svg>
+          <h3 class="text-lg font-semibold">Outros Dispositivos</h3>
+          <p class="text-sm opacity-80 mt-1">Fire TV, TV Box e outros</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- Manual Section -->
+    <section class="bg-gray-800 rounded-2xl shadow-lg p-8">
+      <div class="flex items-center justify-between mb-6">
+        <h2 class="text-2xl font-semibold">📘 Manual de Uso</h2>
+        <button id="toggle-manual-btn" class="text-sm px-3 py-1 bg-blue-600 hover:bg-blue-700 rounded-lg transition">Expandir</button>
+      </div>
+      <div id="manual-content" class="hidden space-y-4">
+        <p>1️⃣ Baixe o app UniTV conforme seu dispositivo.</p>
+        <p>2️⃣ Faça login com suas credenciais fornecidas pela equipe.</p>
+        <p>3️⃣ Escolha seu canal ou conteúdo favorito e divirta-se.</p>
+        <p>4️⃣ Em caso de erro, entre em contato pelo WhatsApp abaixo.</p>
+      </div>
+    </section>
+
+    <!-- Sobre Section -->
+    <section class="bg-gray-800 rounded-2xl shadow-lg p-8">
+      <div class="flex items-center justify-between mb-6">
+        <h2 class="text-2xl font-semibold">ℹ️ Sobre o UniTV</h2>
+        <button id="toggle-about-btn" class="text-sm px-3 py-1 bg-blue-600 hover:bg-blue-700 rounded-lg transition">Expandir</button>
+      </div>
+      <div id="about-content" class="hidden space-y-4">
+        <p>UniTV é uma plataforma de streaming desenvolvida para simplificar o acesso a conteúdos de alta qualidade com estabilidade e suporte dedicado.</p>
+        <p>Nosso compromisso é oferecer a melhor experiência em entretenimento digital.</p>
+      </div>
+    </section>
+
+    <!-- IA Section -->
+    <section class="bg-gray-800 rounded-2xl shadow-lg p-8">
+      <h2 class="text-2xl font-semibold mb-6">🤖 Assistente UniTV IA</h2>
+      <div class="flex flex-col md:flex-row gap-4">
+        <button id="generate-ia-suggestion" class="w-full md:w-1/2 bg-purple-600 hover:bg-purple-700 px-6 py-3 rounded-xl font-semibold transition">Gerar Sugestão de Conteúdo</button>
+        <button id="ask-ia-btn" class="w-full md:w-1/2 bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-xl font-semibold transition">Perguntar à IA</button>
+      </div>
+      <div id="ia-response" class="mt-6 bg-gray-700 rounded-xl p-4 text-sm text-gray-200 hidden"></div>
+    </section>
+
+    <!-- Suporte -->
+    <section class="bg-gray-800 rounded-2xl shadow-lg p-8 text-center">
+      <h2 class="text-2xl font-semibold mb-4">📞 Suporte Técnico</h2>
+      <p class="text-gray-300 mb-4">Precisa de ajuda? Fale conosco via WhatsApp.</p>
+      <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 px-6 py-3 rounded-xl font-semibold transition">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 32 32" class="w-6 h-6">
+          <path d="M16.003 3C9.379 3 4 8.379 4 15.003c0 2.648.744 5.115 2.051 7.239L4 29l6.918-2.01A11.929 11.929 0 0016.003 27c6.624 0 12.003-5.379 12.003-11.997C28.006 8.379 22.627 3 16.003 3zM16 25a8.964 8.964 0 01-4.57-1.25l-.33-.195-4.107 1.194 1.232-3.995-.213-.343A8.973 8.973 0 017 15c0-4.963 4.037-9 9.003-9 4.963 0 9.003 4.037 9.003 9 0 4.963-4.04 9-9.003 9zm4.916-6.438c-.27-.135-1.59-.786-1.836-.875-.247-.09-.428-.135-.607.135-.18.27-.697.875-.855 1.055-.157.18-.314.203-.584.068-.27-.135-1.14-.42-2.173-1.338-.803-.717-1.345-1.603-1.503-1.873-.157-.27-.017-.416.118-.55.122-.122.27-.314.405-.472.135-.157.18-.27.27-.45.09-.18.045-.338-.022-.472-.068-.135-.607-1.462-.83-2.002-.218-.523-.44-.452-.607-.46h-.52c-.18 0-.472.068-.72.338s-.945.923-.945 2.25.967 2.61 1.102 2.79c.135.18 1.9 2.903 4.607 4.07.645.278 1.147.444 1.54.568.647.207 1.237.178 1.703.108.52-.078 1.59-.65 1.815-1.278.225-.63.225-1.17.157-1.278-.068-.108-.247-.18-.518-.315z"/>
+        </svg>
+        Falar com o Suporte
       </a>
+    </section>
+  </main>
 
-      <!-- Card para TV Box / Dispositivos Maiores -->
-      <a aria-label="Baixar para TV Box" class="download-card flex flex-col items-center p-6 rounded-2xl text-white hover:text-blue-400" href="http://zipa.la/unibox" rel="noopener noreferrer" role="link" target="_blank" id="btn-tvbox">
-        <span class="text-5xl mb-3 text-blue-400">
-          <!-- Ícone de Televisão (SVG) -->
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-            <rect x="2" y="7" width="20" height="15" rx="2" ry="2"></rect>
-            <polyline points="17 2 12 7 7 2"></polyline>
-          </svg>
-        </span>
-        <h3 class="font-bold text-xl mb-1">TV Box / Smart TV Android</h3>
-        <p class="text-sm text-gray-400">Recomendado para tela grande e controle remoto. Melhor qualidade.</p>
-        <span class="mt-4 inline-block px-4 py-2 bg-blue-600 text-white font-semibold rounded-lg text-sm shadow-md hover:bg-blue-700">BAIXAR APK</span>
-      </a>
-
-      <!-- Card para Fire TV -->
-      <a aria-label="Baixar para Fire TV" class="download-card flex flex-col items-center p-6 rounded-2xl text-white hover:text-blue-400" href="http://zipa.la/unibox" rel="noopener noreferrer" role="link" target="_blank" id="btn-firetv">
-        <span class="text-5xl mb-3 text-red-400">
-          <!-- Ícone de Fogo (Representando Fire TV Stick) (SVG) -->
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-            <path d="M10.8 17.5c-.8.8-1.7 1.2-2.7 1.2-1.2 0-2.3-.6-3-1.6 0-3.3 3.3-5.2 3.3-5.2s.5-3.3-1.5-5.2C5.3 4.6 6.3 3 8 3c2.7 0 4.3 2.5 4.3 2.5.8 1.5 1.7 2.5 2.7 2.5 1.2 0 2.3-.6 3-1.6 0 3.3-3.3 5.2-3.3 5.2s-.5 3.3 1.5 5.2c.7 1.2-.3 2.8-2 2.8-2.7 0-4.3-2.5-4.3-2.5z"></path>
-          </svg>
-        </span>
-        <h3 class="font-bold text-xl mb-1">Amazon Fire Stick/TV</h3>
-        <p class="text-sm text-gray-400">Otimizado para a linha de aparelhos Amazon, fácil de usar com controle.</p>
-        <span class="mt-4 inline-block px-4 py-2 bg-blue-600 text-white font-semibold rounded-lg text-sm shadow-md hover:bg-blue-700">BAIXAR APK</span>
-      </a>
+  <!-- Rodapé -->
+  <footer class="bg-gray-800 text-center py-6 text-gray-400 text-sm">
+    © 2025 UniTV. Todos os direitos reservados.  
+    <div class="mt-2 space-x-4">
+      <a href="#" class="hover:text-white">Política de Privacidade</a>
+      <a href="#" class="hover:text-white">Termos de Uso</a>
+      <a href="#" class="hover:text-white">Contato</a>
     </div>
-  </section>
+  </footer>
 
-  <!-- Secção de Preços e Chamada para Ação de Subscrição -->
-  <section aria-labelledby="pricing-title" class="mb-10 p-6 bg-gray-800 rounded-2xl border border-gray-700 shadow-xl">
-    <h2 class="text-2xl font-bold text-white mb-6" id="pricing-title">Planos de Assinatura UniTV</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-lg mx-auto">
-        <!-- Plano Mensal (R$ 20) -->
-        <div class="p-5 bg-gray-900 rounded-xl border border-blue-600 shadow-lg flex flex-col justify-between">
-            <h3 class="text-xl font-extrabold text-blue-400 mb-2">Plano Mensal</h3>
-            <p class="text-5xl font-black text-white mb-4">R$ 20<span class="text-lg font-normal text-gray-400">/mês</span></p>
-            <p class="text-sm text-gray-400">Flexibilidade total e acesso imediato a todo o catálogo.</p>
-        </div>
-        
-        <!-- Plano Anual (R$ 220) -->
-        <div class="p-5 bg-gray-900 rounded-xl border border-green-600 shadow-lg flex flex-col justify-between">
-            <h3 class="text-xl font-extrabold text-green-400 mb-2">Plano Anual</h3>
-            <p class="text-5xl font-black text-white mb-4">R$ 220<span class="text-lg font-normal text-gray-400">/ano</span></p>
-            <p class="text-sm text-gray-400">Maior economia! Economize R$ 20 por ano.</p>
-        </div>
-    </div>
-    
-    <!-- CTA para Suporte -->
-    <p class="mt-8 text-xl font-bold text-yellow-400 flex items-center justify-center">
-        <span class="mr-3 text-2xl">👉</span>
-        Para assinar entre em contato com o suporte
-    </p>
-    <p class="text-sm text-gray-400 mt-2">O link de suporte (WhatsApp) está no canto inferior direito.</p>
-  </section>
-  
-  <!-- Banner Web (Acesso direto via navegador) -->
-  <section aria-labelledby="banner-title" class="mb-10">
-    <a aria-label="UniTV Web chegou - abrir uvweboficial.com" class="w-full inline-flex items-center justify-center px-6 py-4 rounded-2xl bg-gradient-to-r from-purple-600 to-pink-500 text-white font-extrabold shadow-lg hover:opacity-95 focus:outline-none focus:ring-2 focus:ring-purple-300" href="https://www.uvweboficial.com" rel="noopener noreferrer" role="link" target="_blank">
-      <span aria-hidden="true" class="mr-3 text-2xl">🖥️</span>
-      <span id="banner-title">ASSISTA NO NAVEGADOR! — UniTV Web chegou</span>
-    </a>
-  </section>
+  <!-- Script interativo -->
+  <script>
+    // Expansão de seções
+    const toggleManualBtn = document.getElementById('toggle-manual-btn');
+    const manualContent = document.getElementById('manual-content');
+    toggleManualBtn.addEventListener('click', () => {
+      manualContent.classList.toggle('hidden');
+      toggleManualBtn.textContent = manualContent.classList.contains('hidden') ? 'Expandir' : 'Recolher';
+    });
 
-  <!-- Secção de Sugestão de Conteúdo com Gemini API (CURADOR) -->
-  <section aria-labelledby="ai-suggestion-title" class="mb-10 p-6 bg-yellow-900/30 rounded-2xl border border-yellow-800 shadow-md">
-    <h2 class="text-xl font-bold text-white mb-4" id="ai-suggestion-title">Curador IA UniTV</h2>
-    <button class="w-full inline-flex items-center justify-center px-6 py-3 bg-yellow-500 text-white font-semibold rounded-xl shadow-lg hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-400 disabled:opacity-50 transition duration-300" id="generate-suggestion-btn">
-      <span aria-hidden="true" class="mr-2 text-xl">✨</span>
-      Gerar Sugestão de Conteúdo
-    </button>
-    
-    <!-- Área de Resultados e Loading (Layout Flex para Imagem e Texto) -->
-    <div class="mt-4 p-4 bg-gray-800 rounded-lg border border-gray-700 min-h-32 relative flex flex-col md:flex-row items-center md:items-start" id="gemini-suggestion-wrapper">
-      
-      <!-- Container da Capa (Capa usa placeholder dinâmico) -->
-      <div class="w-32 h-48 flex-shrink-0 mb-4 md:mb-0 md:mr-4">
-          <!-- Placeholder de Imagem para a Capa -->
-          <img id="suggestion-image" src="https://placehold.co/150x225/374151/ffffff?text=Capa" class="rounded-lg shadow-md w-full h-full object-cover" alt="Capa do conteúdo sugerido"/>
-      </div>
-      
-      <!-- Container do Texto da Sugestão -->
-      <div class="w-full text-center md:text-left">
-          <h3 id="suggestion-title" class="text-xl font-extrabold text-white mb-1">Curador UniTV</h3>
-          <p id="suggestion-details" class="text-sm font-semibold text-yellow-400 mb-2">Pronto para a sua sugestão!</p>
-          <p class="text-gray-300 text-sm" id="suggestion-text">Clique no botão acima para receber uma sugestão personalizada do nosso Curador IA!</p>
-      </div>
+    const toggleAboutBtn = document.getElementById('toggle-about-btn');
+    const aboutContent = document.getElementById('about-content');
+    toggleAboutBtn.addEventListener('click', () => {
+      aboutContent.classList.toggle('hidden');
+      toggleAboutBtn.textContent = aboutContent.classList.contains('hidden') ? 'Expandir' : 'Recolher';
+    });
 
-      <!-- Spinner de Loading (Visível apenas durante a chamada à API) -->
-      <div id="loading-spinner" class="hidden absolute inset-0 bg-gray-800 bg-opacity-80 flex items-center justify-center rounded-lg">
-        <div class="animate-spin rounded-full h-8 w-8 border-b-2 border-yellow-400"></div>
-        <p class="ml-3 text-yellow-400 font-semibold">A pensar na melhor sugestão...</p>
-      </div>
-    </div>
-  </section>
+    // IA simulada
+    const iaResponse = document.getElementById('ia-response');
+    document.getElementById('generate-ia-suggestion').addEventListener('click', () => {
+      iaResponse.textContent = "🎬 Sugestão da IA: Experimente assistir 'Planeta Vivo' — documentário em 4K com som imersivo!";
+      iaResponse.classList.remove('hidden');
+    });
 
-  <!-- Secção de Suporte Rápido com Gemini API (FAQ Interativa) -->
-  <section aria-labelledby="ai-faq-title" class="mb-10 p-6 bg-blue-900/30 rounded-2xl border border-blue-800 shadow-md">
-      <h2 class="text-xl font-bold text-white mb-4" id="ai-faq-title">Assistente de Suporte Rápido IA</h2>
-      <p class="text-gray-300 mb-4 text-sm">Tem dúvidas sobre <strong>instalação</strong>, <strong>ativação</strong> ou <strong>funcionalidades</strong>? Pergunte à nossa IA!</p>
-      
-      <!-- Input e Botão de Pergunta (Layout flexível para mobile/desktop) -->
-      <div class="flex flex-col sm:flex-row gap-3">
-        <input type="text" id="faq-input" placeholder="Ex: Preciso de internet para usar o Playback?" class="w-full p-3 bg-gray-900 text-white border border-blue-700 rounded-xl focus:ring-blue-500 focus:border-blue-500 transition duration-150" aria-label="Introduza a sua questão sobre o UniTV">
-        <button class="flex-shrink-0 px-6 py-3 bg-blue-600 text-white font-semibold rounded-xl shadow-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 disabled:opacity-50 transition duration-300" id="ask-faq-btn">
-          <span class="mr-1 text-xl">💬</span>
-          Perguntar à IA
-        </button>
-      </div>
-
-      <!-- Área de Resposta e Loading do FAQ -->
-      <div class="mt-4 text-left p-4 bg-gray-800 rounded-lg border border-gray-700 min-h-16 relative" id="faq-answer-wrapper">
-        <p class="text-gray-400 text-sm italic" id="faq-answer-text">Aguardando a sua questão...</p>
-        <div id="faq-loading-spinner" class="hidden absolute inset-0 bg-gray-800 bg-opacity-80 flex items-center justify-center rounded-lg">
-          <div class="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-400"></div>
-          <p class="ml-3 text-blue-400 font-semibold">A procurar a resposta...</p>
-        </div>
-      </div>
-  </section>
-
-  <!-- Seções Secundárias (Informações Adicionais) -->
-  <section class="divide-y divide-gray-700">
-    <!-- Manual de Instalação e Uso (Seção Expansível) -->
-    <div class="py-4">
-      <button aria-controls="manual-content" aria-expanded="false" aria-label="Mostrar ou esconder o manual de instalação e uso" class="btn-secondary inline-flex items-center justify-center w-full px-6 py-3 text-base font-semibold rounded-xl shadow-md" id="toggle-manual-btn">
-        <span aria-hidden="true" class="btn-icon mr-2">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5"><path d="M20 13.4V4a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2.6"/><path d="m14 13-3 3 3 3"/><path d="M10 16H4"/></svg>
-        </span>
-        <span class="btn-text">Ver Manual de Instalação e Uso</span>
-      </button>
-      <p class="text-sm text-gray-400 mt-2">Instruções rápidas, dicas e solução de problemas.</p>
-      
-      <!-- Conteúdo do Manual (Visível apenas quando expandido) -->
-      <div aria-hidden="true" aria-labelledby="manual-title" class="hidden text-left pt-6" id="manual-content" role="region">
-        <h2 class="text-xl font-bold text-white mb-4 pb-2 border-b border-gray-700">Guia Completo de Instalação e Uso</h2>
-        
-        <!-- Bloco 1: Instalação -->
-        <div class="mb-4 p-4 bg-blue-900/30 rounded-lg shadow-inner border border-blue-800">
-          <h3 class="font-bold text-blue-400 mb-2">1. Instalação do Aplicativo</h3>
-          <ul class="list-disc ml-5 text-sm text-gray-300 space-y-1">
-            <li>Escolha o link de download compatível com seu dispositivo.</li>
-            <li>Após o download, abra o arquivo APK e permita a instalação de fontes desconhecidas, se solicitado.</li>
-            <li>Conclua a instalação e abra o aplicativo UniTV.</li>
-          </ul>
-        </div>
-        
-        <!-- Bloco 2: Ativação -->
-        <div class="mb-4 p-4 bg-green-900/30 rounded-lg shadow-inner border border-green-800">
-          <h3 class="font-bold text-green-400 mb-2">2. Ativação e Login</h3>
-          <ul class="list-disc ml-5 text-sm text-gray-300 space-y-1">
-            <li>Insira o código de ativação fornecido.</li>
-            <li>Verifique se está conectado à internet para validar o acesso.</li>
-            <li>Após o login, o conteúdo será liberado automaticamente.</li>
-          </ul>
-        </div>
-        
-        <!-- Bloco 3: Funcionalidades -->
-        <div class="mb-4 p-4 bg-yellow-900/30 rounded-lg shadow-inner border border-yellow-800">
-          <h3 class="font-bold text-yellow-400 mb-2">3. Funcionalidades Principais</h3>
-          <ul class="list-disc ml-5 text-sm text-gray-300 space-y-1">
-            <li>Canais em alta qualidade, incluindo 4K (UHD).</li>
-            <li>Playback disponível por até 7 dias.</li>
-            <li>Suporte a até 2 dispositivos simultâneos.</li>
-            <li>Catálogo on-demand com filmes e séries atualizados.</li>
-            <li>Interface intuitiva com busca por nome, gênero e idioma.</li>
-          </ul>
-        </div>
-        
-        <!-- Bloco 4: Suporte/Dicas -->
-        <div class="mb-4 p-4 bg-red-900/30 rounded-lg shadow-inner border border-red-800">
-          <h3 class="font-bold text-red-400 mb-2">4. Dicas e Solução de Problemas</h3>
-          <ul class="list-disc ml-5 text-sm text-gray-300 space-y-1">
-            <li>Em caso de travamentos, verifique sua conexão de internet (recomendado acima de 10 Mbps).</li>
-            <li>Limpe o cache do aplicativo nas configurações do seu dispositivo.</li>
-            <li>Para suporte técnico, utilize o botão de WhatsApp disponível na página.</li>
-            <li>As atualizações são feitas automaticamente ao abrir o aplicativo.</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    
-    <!-- Sobre o UniTV (Seção Expansível) -->
-    <div class="py-4">
-      <button aria-controls="sobre-content" aria-expanded="false" aria-label="Mostrar ou esconder informações sobre o UniTV" class="btn-secondary inline-flex items-center justify-center w-full px-6 py-3 text-base font-semibold rounded-xl shadow-md" id="toggle-sobre-btn">
-        <span aria-hidden="true" class="btn-icon mr-2">
-          <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-          </svg>
-        </span>
-        <span class="btn-text">Sobre o UniTV</span>
-      </button>
-      
-      <!-- Conteúdo Sobre o UniTV (Visível apenas quando expandido) -->
-      <div aria-hidden="true" aria-labelledby="toggle-sobre-btn" class="hidden text-left pt-6" id="sobre-content" role="region">
-         <div class="p-4 bg-gray-800/50 rounded-lg shadow-inner border border-gray-700">
-              <p class="text-gray-300 text-sm leading-relaxed">
-                  O UniTV é uma plataforma de streaming que oferece uma vasta gama de conteúdo, incluindo canais ao vivo, filmes e séries. Nosso objetivo é fornecer entretenimento de alta qualidade com uma interface amigável e acessível em múltiplos dispositivos. Acreditamos em inovação contínua para entregar a melhor experiência de visualização aos nossos usuários, com atualizações constantes e suporte dedicado.
-              </p>
-          </div>
-      </div>
-    </div>
-  </section>
-
-</main>
-
-<!-- Botão Flutuante do WhatsApp -->
-<a href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20os%20planos%20do%20UniTV." 
-   class="btn-whatsapp-float fixed bottom-5 right-5 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:bg-green-600"
-   target="_blank" rel="noopener noreferrer" aria-label="Abrir conversa no WhatsApp para suporte">
-    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 24 24" fill="currentColor">
-        <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.894 11.892-1.99 0-3.902-.539-5.625-1.498l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.886-.001 2.269.655 4.398 1.803 6.166l-1.331 4.859 4.859-1.332zM9.266 8.354c-.196-.099-1.157-.577-1.338-.644s-.314-.099-.449.099c-.134.198-.505.644-.619.779s-.232.15-.43.052c-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372s-.124-.306-.012-.411c.111        alt="Logotipo UniTV oficial" 
-        class="w-full h-full object-cover"
-        onerror="this.onerror=null;this.src='https://placehold.co/96x96/0056b3/ffffff?text=Logo+UniTV'"
-      />
-    </div>
-    <h1 class="text-4xl font-extrabold text-white mb-2">Download Oficial UniTV</h1>
-    <p class="text-gray-300 mb-10 text-lg">Escolha seu dispositivo e comece a assistir em minutos. **Instalação rápida e segura.**</p>
-  </header>
-
-  <!-- Secção Principal: Links de Download (Layout de Cartões Visuais) -->
-  <section aria-labelledby="download-title" class="mb-10">
-    <h2 class="text-2xl font-bold text-white mb-6 text-center" id="download-title">Selecione seu Dispositivo</h2>
-    
-    <!-- Grid com 3 colunas para dispositivos maiores -->
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-      
-      <!-- Card para Celular Android -->
-      <a aria-label="Baixar para Celular Android" class="download-card flex flex-col items-center p-6 rounded-2xl text-white hover:text-blue-400" href="http://zipa.la/unibox" rel="noopener noreferrer" role="link" target="_blank" id="btn-android">
-        <span class="text-5xl mb-3 text-green-400">
-          <!-- Ícone de Celular (SVG) -->
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-            <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
-            <line x1="12" y1="18" x2="12" y2="18"></line>
-          </svg>
-        </span>
-        <h3 class="font-bold text-xl mb-1">Android (Celular/Tablet)</h3>
-        <p class="text-sm text-gray-400">Para assistir em movimento. Versão ideal para telas menores.</p>
-        <span class="mt-4 inline-block px-4 py-2 bg-blue-600 text-white font-semibold rounded-lg text-sm shadow-md hover:bg-blue-700">BAIXAR APK</span>
-      </a>
-
-      <!-- Card para TV Box / Dispositivos Maiores -->
-      <a aria-label="Baixar para TV Box" class="download-card flex flex-col items-center p-6 rounded-2xl text-white hover:text-blue-400" href="http://zipa.la/unibox" rel="noopener noreferrer" role="link" target="_blank" id="btn-tvbox">
-        <span class="text-5xl mb-3 text-blue-400">
-          <!-- Ícone de Televisão (SVG) -->
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-            <rect x="2" y="7" width="20" height="15" rx="2" ry="2"></rect>
-            <polyline points="17 2 12 7 7 2"></polyline>
-          </svg>
-        </span>
-        <h3 class="font-bold text-xl mb-1">TV Box / Smart TV Android</h3>
-        <p class="text-sm text-gray-400">Recomendado para tela grande e controle remoto. Melhor qualidade.</p>
-        <span class="mt-4 inline-block px-4 py-2 bg-blue-600 text-white font-semibold rounded-lg text-sm shadow-md hover:bg-blue-700">BAIXAR APK</span>
-      </a>
-
-      <!-- Card para Fire TV -->
-      <a aria-label="Baixar para Fire TV" class="download-card flex flex-col items-center p-6 rounded-2xl text-white hover:text-blue-400" href="http://zipa.la/unibox" rel="noopener noreferrer" role="link" target="_blank" id="btn-firetv">
-        <span class="text-5xl mb-3 text-red-400">
-          <!-- Ícone de Fogo (Representando Fire TV Stick) (SVG) -->
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-            <path d="M10.8 17.5c-.8.8-1.7 1.2-2.7 1.2-1.2 0-2.3-.6-3-1.6 0-3.3 3.3-5.2 3.3-5.2s.5-3.3-1.5-5.2C5.3 4.6 6.3 3 8 3c2.7 0 4.3 2.5 4.3 2.5.8 1.5 1.7 2.5 2.7 2.5 1.2 0 2.3-.6 3-1.6 0 3.3-3.3 5.2-3.3 5.2s-.5 3.3 1.5 5.2c.7 1.2-.3 2.8-2 2.8-2.7 0-4.3-2.5-4.3-2.5z"></path>
-          </svg>
-        </span>
-        <h3 class="font-bold text-xl mb-1">Amazon Fire Stick/TV</h3>
-        <p class="text-sm text-gray-400">Otimizado para a linha de aparelhos Amazon, fácil de usar com controle.</p>
-        <span class="mt-4 inline-block px-4 py-2 bg-blue-600 text-white font-semibold rounded-lg text-sm shadow-md hover:bg-blue-700">BAIXAR APK</span>
-      </a>
-    </div>
-  </section>
-
-  <!-- NOVO: Secção de Preços e Chamada para Ação de Subscrição -->
-  <section aria-labelledby="pricing-title" class="mb-10 p-6 bg-gray-800 rounded-2xl border border-gray-700 shadow-xl">
-    <h2 class="text-2xl font-bold text-white mb-6" id="pricing-title">Planos de Assinatura UniTV</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-lg mx-auto">
-        <!-- Plano Mensal (R$ 20) -->
-        <div class="p-5 bg-gray-900 rounded-xl border border-blue-600 shadow-lg flex flex-col justify-between">
-            <h3 class="text-xl font-extrabold text-blue-400 mb-2">Plano Mensal</h3>
-            <p class="text-5xl font-black text-white mb-4">R$ 20<span class="text-lg font-normal text-gray-400">/mês</span></p>
-            <p class="text-sm text-gray-400">Flexibilidade total e acesso imediato a todo o catálogo.</p>
-        </div>
-        
-        <!-- Plano Anual (R$ 220) -->
-        <div class="p-5 bg-gray-900 rounded-xl border border-green-600 shadow-lg flex flex-col justify-between">
-            <h3 class="text-xl font-extrabold text-green-400 mb-2">Plano Anual</h3>
-            <p class="text-5xl font-black text-white mb-4">R$ 220<span class="text-lg font-normal text-gray-400">/ano</span></p>
-            <p class="text-sm text-gray-400">Maior economia! Economize R$ 20 por ano.</p>
-        </div>
-    </div>
-    
-    <!-- CTA para Suporte -->
-    <p class="mt-8 text-xl font-bold text-yellow-400 flex items-center justify-center">
-        <span class="mr-3 text-2xl">👉</span>
-        Para assinar entre em contato com o suporte
-    </p>
-    <p class="text-sm text-gray-400 mt-2">O link de suporte (WhatsApp) está no canto inferior direito.</p>
-  </section>
-  
-  <!-- Banner Web (Acesso direto via navegador) -->
-  <section aria-labelledby="banner-title" class="mb-10">
-    <a aria-label="UniTV Web chegou - abrir uvweboficial.com" class="w-full inline-flex items-center justify-center px-6 py-4 rounded-2xl bg-gradient-to-r from-purple-600 to-pink-500 text-white font-extrabold shadow-lg hover:opacity-95 focus:outline-none focus:ring-2 focus:ring-purple-300" href="https://www.uvweboficial.com" rel="noopener noreferrer" role="link" target="_blank">
-      <span aria-hidden="true" class="mr-3 text-2xl">🖥️</span>
-      <span id="banner-title">ASSISTA NO NAVEGADOR! — UniTV Web chegou</span>
-    </a>
-  </section>
-
-  <!-- Secção de Sugestão de Conteúdo com Gemini API (CURADOR) -->
-  <section aria-labelledby="ai-suggestion-title" class="mb-10 p-6 bg-yellow-900/30 rounded-2xl border border-yellow-800 shadow-md">
-    <h2 class="text-xl font-bold text-white mb-4" id="ai-suggestion-title">Curador IA UniTV</h2>
-    <button class="w-full inline-flex items-center justify-center px-6 py-3 bg-yellow-500 text-white font-semibold rounded-xl shadow-lg hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-400 disabled:opacity-50 transition duration-300" id="generate-suggestion-btn" onclick="generateSuggestion()">
-      <span aria-hidden="true" class="mr-2 text-xl">✨</span>
-      Gerar Sugestão de Conteúdo
-    </button>
-    
-    <!-- Área de Resultados e Loading (Layout Flex para Imagem e Texto) -->
-    <div class="mt-4 p-4 bg-gray-800 rounded-lg border border-gray-700 min-h-32 relative flex flex-col md:flex-row items-center md:items-start" id="gemini-suggestion-wrapper">
-      
-      <!-- Container da Capa (Capa usa placeholder dinâmico) -->
-      <div class="w-32 h-48 flex-shrink-0 mb-4 md:mb-0 md:mr-4">
-          <!-- Placeholder de Imagem para a Capa -->
-          <img id="suggestion-image" src="https://placehold.co/150x225/A0AEC0/ffffff?text=Capa" class="rounded-lg shadow-md w-full h-full object-cover" alt="Capa do conteúdo sugerido"/>
-      </div>
-      
-      <!-- Container do Texto da Sugestão -->
-      <div class="w-full text-center md:text-left">
-          <h3 id="suggestion-title" class="text-xl font-extrabold text-white mb-1">Curador UniTV</h3>
-          <p id="suggestion-details" class="text-sm font-semibold text-yellow-400 mb-2">Pronto para a sua sugestão!</p>
-          <p class="text-gray-300 text-sm" id="suggestion-text">Clique no botão acima para receber uma sugestão personalizada do nosso Curador IA!</p>
-      </div>
-
-      <!-- Spinner de Loading (Visível apenas durante a chamada à API) -->
-      <div id="loading-spinner" class="hidden absolute inset-0 bg-gray-800 bg-opacity-80 flex items-center justify-center rounded-lg">
-        <div class="animate-spin rounded-full h-8 w-8 border-b-2 border-yellow-400"></div>
-        <p class="ml-3 text-yellow-400 font-semibold">A pensar na melhor sugestão...</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Secção de Suporte Rápido com Gemini API (FAQ Interativa) -->
-  <section aria-labelledby="ai-faq-title" class="mb-10 p-6 bg-blue-900/30 rounded-2xl border border-blue-800 shadow-md">
-      <h2 class="text-xl font-bold text-white mb-4" id="ai-faq-title">Assistente de Suporte Rápido IA</h2>
-      <p class="text-gray-300 mb-4 text-sm">Tem dúvidas sobre **instalação**, **ativação** ou **funcionalidades**? Pergunte à nossa IA!</p>
-      
-      <!-- Input e Botão de Pergunta (Layout flexível para mobile/desktop) -->
-      <div class="flex flex-col sm:flex-row gap-3">
-        <input type="text" id="faq-input" placeholder="Ex: Preciso de internet para usar o Playback?" class="w-full p-3 bg-gray-900 text-white border border-blue-700 rounded-xl focus:ring-blue-500 focus:border-blue-500 transition duration-150" aria-label="Introduza a sua questão sobre o UniTV">
-        <button class="flex-shrink-0 px-6 py-3 bg-blue-600 text-white font-semibold rounded-xl shadow-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 disabled:opacity-50 transition duration-300" id="ask-faq-btn" onclick="askFAQ()">
-          <span class="mr-1 text-xl">💬</span>
-          Perguntar à IA
-        </button>
-      </div>
-
-      <!-- Área de Resposta e Loading do FAQ -->
-      <div class="mt-4 text-left p-3 bg-gray-800 rounded-lg border border-gray-700 min-h-16 relative" id="faq-answer-wrapper">
-        <p class="text-gray-400 text-sm italic" id="faq-answer-text">Aguardando a sua questão...</p>
-        <div id="faq-loading-spinner" class="hidden absolute inset-0 bg-gray-800 bg-opacity-80 flex items-center justify-center rounded-lg">
-          <div class="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-400"></div>
-          <p class="ml-3 text-blue-400 font-semibold">A procurar a resposta...</p>
-        </div>
-      </div>
-  </section>
-
-  <!-- Seções Secundárias (Informações Adicionais) -->
-  <section class="divide-y divide-gray-700">
-    <!-- Manual de Instalação e Uso (Seção Expansível) -->
-    <div class="py-4">
-      <button aria-controls="manual-content" aria-expanded="false" aria-label="Mostrar ou esconder o manual de instalação e uso" class="btn-secondary inline-flex items-center justify-center w-full px-6 py-3 text-base font-semibold rounded-xl shadow-md" id="toggle-manual-btn" onclick="toggleManual()">
-        <span aria-hidden="true" class="btn-icon mr-2">
-          <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path d="M4 19.5V15a2.5 2.5 0 0 1 5 0v4.5"></path>
-            <path d="M19 19.5V15a2.5 2.5 0 0 0-5 0v4.5"></path>
-            <rect height="6" rx="1" width="14" x="5" y="4"></rect>
-          </svg>
-        </span>
-        <span class="btn-text">Ver Manual de Instalação e Uso</span>
-      </button>
-      <p class="text-sm text-gray-400 mt-2">Instruções rápidas, dicas e solução de problemas.</p>
-      
-      <!-- Conteúdo do Manual (Visível apenas quando expandido) -->
-      <div aria-hidden="true" aria-labelledby="manual-title" class="hidden text-left pt-6" id="manual-content" role="region">
-        <h2 class="text-xl font-bold text-white mb-4 pb-2">Guia Completo de Instalação e Uso</h2>
-        
-        <!-- Bloco 1: Instalação -->
-        <div class="mb-4 p-4 bg-blue-900/30 rounded-lg shadow-inner border border-blue-800">
-          <h3 class="font-bold text-blue-400 mb-2">1. Instalação do Aplicativo</h3>
-          <ul class="list-disc ml-5 text-sm text-gray-300 space-y-1">
-            <li>Escolha o link de download compatível com seu dispositivo.</li>
-            <li>Após o download, abra o arquivo APK e permita a instalação de fontes desconhecidas.</li>
-            <li>Conclua a instalação e abra o aplicativo UniTV.</li>
-          </ul>
-        </div>
-        
-        <!-- Bloco 2: Ativação -->
-        <div class="mb-4 p-4 bg-green-900/30 rounded-lg shadow-inner border border-green-800">
-          <h3 class="font-bold text-green-400 mb-2">2. Ativação e Login</h3>
-          <ul class="list-disc ml-5 text-sm text-gray-300 space-y-1">
-            <li>Insira o código de ativação fornecido pela Capini Serviços.</li>
-            <li>Verifique se está conectado à internet para validar o acesso.</li>
-            <li>Após o login, o conteúdo será liberado automaticamente.</li>
-          </ul>
-        </div>
-        
-        <!-- Bloco 3: Funcionalidades -->
-        <div class="mb-4 p-4 bg-yellow-900/30 rounded-lg shadow-inner border border-yellow-800">
-          <h3 class="font-bold text-yellow-400 mb-2">3. Funcionalidades Principais</h3>
-          <ul class="list-disc ml-5 text-sm text-gray-300 space-y-1">
-            <li>Mais de 65 canais em qualidade 4K (UHD).</li>
-            <li>Playback disponível por até 7 dias.</li>
-            <li>Suporte a até 2 dispositivos simultâneos.</li>
-            <li>Catálogo on-demand com filmes e séries atualizados.</li>
-            <li>Interface intuitiva com busca por nome, gênero e idioma.</li>
-          </ul>
-        </div>
-        
-        <!-- Bloco 4: Suporte/Dicas -->
-        <div class="mb-4 p-4 bg-red-900/30 rounded-lg shadow-inner border border-red-800">
-          <h3 class="font-bold text-red-400 mb-2">4. Dicas e Solução de Problemas</h3>
-          <ul class="list-disc ml-5 text-sm text-gray-300 space-y-1">
-            <li>Em caso de travamentos, verifique sua conexão de internet.</li>
-            <li>Limpe o cache do aplicativo nas configurações do dispositivo.</li>
-            <li>Para suporte técnico, utilize o botão de WhatsApp disponível na página.</li>
-            <li>Atualizações são feitas automaticamente ao abrir o aplicativo.</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    
-    <!-- Sobre o UniTV (Seção Expansível) -->
-    <div class="py-4">
-      <button aria-controls="sobre-content" aria-expanded="false" aria-label="Mostrar ou esconder informações sobre o UniTV" class="btn-secondary inline-flex items-center justify-center w-full px-6 py-3 text-base font-semibold rounded-xl shadow-md" id="toggle-sobre-btn" onclick="toggleSobre()">
-        <span aria-hidden="true" class="btn-icon mr-2">
-          <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path d="M13 16h-1v-4h-1m1-4h.01M12 20h.01M12 4h.01" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-          </svg>
-        </span>
-        <span class="btn-text">Sobre o UniTV</span>
-      </button>
-      
-      <!-- Conteúdo Sobre o UniTV (Visível apenas quando expandido) -->
-      <div aria-hidden="true" aria-labelledby="toggle-sobre-btn" class="hidden text-left pt-6" id="sobre-content" role="region">
-        <p class="
+    document.getElementById('ask-ia-btn').addEventListener('click', () => {
+      iaResponse.textContent = "🤖 A IA ainda está em treinamento. Em breve você poderá conversar com ela diretamente!";
+      iaResponse.classList.remove('hidden');
+    });
+  </script>
+</body>
+</html>
